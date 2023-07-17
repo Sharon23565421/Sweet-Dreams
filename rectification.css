@@ -1,0 +1,302 @@
+/**********************************************************************                                      problem***************************************************************************************/
+
+
+.problem {
+    margin-top: 8.90625%;
+}
+
+.problem .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    margin-bottom: 4.45312%;
+}
+
+.problem .container:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.problem .container .img {
+    width: 50%;
+    padding-left: 15%;
+}
+
+.problem .container:nth-of-type(2) .img img {
+    animation: bark 8s ease -2s infinite ;
+}
+
+@keyframes bark {
+    0% {
+        transform: scale(1) rotate(5deg);
+    }
+
+    96% {
+        transform: scale(1) rotate(5deg) ;
+    }
+
+    100% {
+        transform: scale(1.3) rotate(-5deg);
+    }
+}
+
+.problem .container:nth-of-type(3) .img img {
+    animation:shake 3s  -2s infinite ;
+}
+
+@keyframes shake {
+    0% {
+        transform: translatex(0);
+    }
+
+    90% {
+        transform: translatex(0);
+    }
+
+    92% {
+        transform: translatex(3%);
+    }
+
+    94% {
+        transform: translatex(-3%);
+    }
+
+    96% {
+        transform: translatex(3%);
+    }
+
+    98% {
+        transform: translatex(-3%);
+    }
+
+    100% {
+        transform: translatex(3%);
+    }
+}
+
+
+.problem .container .text {
+    width: 50%;
+    padding-right: 130px;
+}
+
+.problem .container:nth-of-type(even) .text {
+    padding-left: 130px;
+    padding-right: 0;
+}
+
+.problem .title {
+    margin-bottom: 20px;
+}
+
+.problem .title p {
+    background: #FFE176;
+    width: fit-content;
+    color: white;
+    padding: 0 20px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+
+.problem .cloud {
+    position: absolute;
+    left: 50%;
+    transform: translate(50%, -50%);
+}
+
+.problem .container:nth-of-type(3) .cloud {
+    transform: translate(50%, -30%);
+}
+
+.problem .container:nth-of-type(even) .cloud {
+    transform: translate(-150%, -50%);
+}
+
+
+
+
+/**********************************************************************                                     banner
+   ***************************************************************************************/
+.banner .card {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    background: white;
+    border-radius: 30px;
+    padding: 10px;
+    justify-content: start;
+    align-content: flex-start;
+    margin: 5% 0;
+}
+
+.banner .card .name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.banner .name .text {
+    margin-left: 8%;
+    width: 65%;
+}
+
+.banner .text p:nth-of-type(2) {
+    color: #C9CCD5;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.banner .star {
+    width: 100%;
+    transform: scale(.6);
+    position: relative;
+    left: -20%;
+}
+
+.banner .text {
+    font-size: 12px;
+}
+
+.banner .text p {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.banner .star img {
+    width: 100%;
+}
+
+
+
+
+
+
+/**********************************************************************                                     about
+   ***************************************************************************************/
+
+.about .container {
+    display: flex;
+    padding: 0 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .container .text {
+    width: 50%;
+    padding-right: 5%;
+}
+
+.about .container .title {
+    margin-bottom: 5%;
+}
+
+.about .container .img {
+    width: 50%;
+}
+
+.about .img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/**********************************************************************                                     class
+   ***************************************************************************************/
+.class {
+    margin-bottom: 11.71875%;
+}
+
+.class .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.class .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.class .wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 11.71875%;
+}
+
+.class .card {
+    width: 20%;
+    background: white;
+    border-radius: 50px;
+    padding: 3%;
+    text-align: center;
+    margin: 0 2%;
+}
+
+.class .text {
+    height: 50%;
+    border-bottom: 1px solid #93B5C6;
+    padding-bottom: 3%;
+}
+
+.class .price {
+    padding: 10% 0;
+}
+
+.class .more-btn {
+    background: #93B5C6;
+    border-radius: 50px;
+    transition: .3s;
+    width: 60%;
+    inset: 0;
+    margin: auto;
+    padding: .6% 5%;
+}
+
+.class .more-btn:hover {
+    background: #FFE176;
+    color: #333;
+}
+
+.class .more-btn:hover a {
+    color: #333;
+}
+
+
+.class .more-btn a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.class button {
+    background: #Ffbbbb;
+    border-radius: 50px;
+    transition: .3s;
+    padding: .6% 5%;
+    border: none;
+    cursor: pointer;
+}
+
+.class button:hover {
+    background: #FFE176;
+}
+
+.class button:hover a {
+    color: #333;
+}
+
+.class button a {
+    text-decoration: none;
+    color: white;
+}

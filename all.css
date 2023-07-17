@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Montserrat Alternates, Noto Sans TC, Lilita One;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  color: #333;
+
+}
+
+img {
+  vertical-align: top;
+}
+
+body {
+  background: #FAF6ED;
+  background-image: url(./img/Group\ 2\ \(1\).png);
+
+}
+
+.title {
+  font-size: 32px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.cloud {
+  mix-blend-mode: multiply;
+  width: 29.6875%;
+  height: auto;
+}
+
+.cloud img {
+  width: 100%;
+  height: 100%;
+}
+
+@import url(reset.css);
+
+.container {
+  max-width: 1280px;
+  height: 100%;
+  inset: 0;
+  margin: auto;
+}
+
+
+/************************************************************************************* header ***************************************************/
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.header img {
+  width: 100%;
+}
+
+.header .img {
+  height: 100vh;
+}
+
+.header .img img{
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.header .wrap img:nth-of-type(1) {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.header a img {
+  width: 11.7%;
+  height: auto;
+  position: absolute;
+  display: block;
+  z-index: 2;
+  top: 3%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+h1 {
+  position: absolute;
+  display: block;
+  height: fit-content;
+  width: fit-content;
+  z-index: 1;
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 45px;
+  inset: 0;
+  margin: auto;
+}
+
+.navbar-btn {
+  position: absolute;
+  cursor: pointer;
+  width: 9%;
+  height: 14%;
+  z-index: 1;
+  right: 0;
+}
+
+.navbar-btn img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/************************************************************************************* roll-btn ***************************************************/
+.roll-btn {
+  margin-top: 4.45312%;
+}
+
+
+.roll-btn .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+}
+
+.roll-btn .circle {
+  width: 200px;
+  height: 100%;
+  background: #F4EDDD;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 1%;
+}
+
+.roll-btn .circle a {
+  text-decoration: none;
+}
+
+.roll-btn .btn {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  transition: .3s;
+  transform: translate(0, -5%);
+}
+
+.roll-btn .btn:hover {
+  background: #FFE176;
+  transform: translate(0, 0%);
+
+}
+
+.roll-btn .btn:hover i {
+  color: white;
+}
+
+.roll-btn .btn p {
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+
+}
+
+.roll-btn .btn i {
+  position: absolute;
+  bottom: 20%;
+  color: #ffe176;
+}
+
+
+/************************************************************************************* swing ***************************************************/
+
+.swing {
+  animation: swing 1s steps(2, end) infinite alternate;
+
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+
+
+/************************************************************************************* banner ***************************************************/
+
+.banner {
+  width: 100%;
+  height: 100%;
+  background: #93B5C6;
+  position: relative;
+  padding: 60px 10px;
+  margin-bottom: 25%;
+  margin-top: 11.71875%;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10vw;
+  background-size: cover;
+  background-image: url(./img/Vector.png);
+  background-repeat: no-repeat;
+  left: 0;
+  bottom: 100%;
+
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 15vw;
+  background-size: cover;
+  background-image: url(./img/Vector\ \(1\).png);
+  left: 0;
+  top: 99%;
+  background-repeat: no-repeat;
+}
+
+.banner .container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .heart-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.banner .title {
+  color: white;
+  text-align: center;
+}
+
+.banner .more-btn {
+  background: #Ffbbbb;
+  width: fit-content;
+  padding: 0 20px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  inset: 0;
+  margin: auto;
+  padding: .6% 5%;
+}
+
+.banner .more-btn:hover {
+  background: #FFE176;
+}
+
+.banner .more-btn:hover a {
+  color: #333;
+}
+
+.banner .more-btn a {
+
+  text-decoration: none;
+  color: white;
+}
+
+.banner .wrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+.goback-btn img {
+  position: fixed;
+  top: 80vh;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+
+
+/**********************************************************************                                     logo-ad
+   ***************************************************************************************/
+   .logo-ad {
+    display: flex;
+    width: 100%;
+    margin: 11.71875% 0;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo-ad p {
+    width: fit-content;
+    color: #FFE176;
+    font-size: 84px;
+    font-family: Lilita One;
+    margin: 2%;
+    white-space: pre;
+}
+
+
+
+
+/************************************************************************************* footer ***************************************************/
+footer {
+  background-image: url(./img/footer.png);
+  background-size: cover;
+  height: fit-content;
+  width: 100%;
+  bottom: 0;
+  margin-top: 7.8125%;
+}
+
+footer .row {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-top: 8%;
+  padding-bottom: 4%;
+}
+
+footer p {
+  color: white;
+}
+
+footer .text p:nth-of-type(2),
+.open-time {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+footer .text {
+  margin: 0 5%;
+}
+
+.open-time {
+  padding-right: 40%;
+  text-align: end;
+}
+
+.follow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.follow p {
+  width: 100%;
+}
+
+.follow .img {
+  width: 100%;
+  padding-left: 20%;
+}
+
+.follow .img a {
+  margin-right: 6%;
+  text-decoration: none;
+}

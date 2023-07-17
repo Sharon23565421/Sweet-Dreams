@@ -1,0 +1,366 @@
+.title-cloud {
+  position: absolute;
+  width: 130px;
+  height: 300px;
+  z-index: 1;
+}
+
+.title-cloud p {
+  position: absolute;
+  font-size: 32px;
+  line-height: 62px;
+  font-style: italic;
+}
+
+/**********************************************************************                                      header ***************************************************************************************/
+header {
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 11.71875%;
+}
+
+header .container{
+  max-width: 1920px;
+}
+
+header .wrap {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20%;
+}
+
+header .logo-group {
+  width: 50%;
+}
+
+header .logo {
+  position: absolute;
+  z-index: 1;
+  width: fit-content;
+  height: fit-content;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.logo span {
+  text-align: center;
+  color: #7A7A7A;
+  font-size: 52px;
+  font-family: Montserrat Alternates;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 64px;
+  letter-spacing: 7.80px;
+}
+
+.logo img {
+  position: relative;
+  transform: translate(180%, 60%);
+  width: 34.6875%;
+  height: auto;
+
+}
+
+.logo span:nth-of-type(1) {
+  position: relative;
+  display: block;
+  width: fit-content;
+}
+
+.logo span:nth-of-type(2) {
+  position: relative;
+  width: fit-content;
+  display: block;
+  transform: translate(45%, 0%);
+}
+
+.logo span:nth-of-type(3) {
+  position: relative;
+  display: block;
+  width: fit-content;
+  /* transform: translate(0, 1230%); */
+  font-size: 18px;
+  font-family: Noto Sans TC;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: normal
+}
+
+.img-givemefive {
+  position: relative;
+  width: 50%;
+}
+
+.img-givemefive img {
+  width: 100%;
+  height: 100%;
+}
+
+.cat {
+  position: absolute;
+  width: 18%;
+  height: auto;
+  left: 50%;
+  transform: translate(0,50%);
+}
+
+.cat img {
+  width: 100%;
+  height: 100%;
+}
+
+.shiba {
+  position: absolute;
+  width: 26.58%;
+  height: auto;
+  left: 50%;
+  transform: translate(80%, 200%);
+}
+
+.shiba img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+/******************************************************************************************************** banner**********************************************************************/
+.banner {
+  background-image: url(./img/Vector\ 9.png);
+  background-repeat: no-repeat;
+  background-position: right 0 top 35%;
+}
+
+.banner .container .img {
+  position: relative;
+  width: 50%;
+}
+
+
+
+.banner img {
+  width: 100%;
+}
+
+
+.banner .item {
+  width: 50%;
+  padding-left: 40px;
+  position: relative;
+}
+
+.banner .item .text span,
+.banner .item .title {
+  color: white;
+
+}
+
+.banner .item .title {
+  margin-bottom: 20px;
+}
+
+.banner .title p {
+  background: #FFE176;
+  width: fit-content;
+  color: white;
+  padding: 0 20px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.banner .bg-img img:nth-of-type(1) {
+  position: absolute;
+  left: 50%;
+  transform: scale(0.5) translate(-50%, -260%);
+}
+
+
+
+.card-group .title-cloud {
+
+  right: -10px;
+  top: -100px;
+}
+
+.title-cloud img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-group .title-cloud p {
+  transform: rotate(90deg) translate(-180%, -50%);
+}
+
+.card-group {
+  position: relative;
+  margin-top: 100px;
+}
+
+.card-group .title {
+  color: white;
+  text-align: center;
+}
+
+.card-group .wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-group .card {
+  position: relative;
+  width: 25%;
+  background: #fff;
+  border-radius: 50px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: top;
+  padding: 30px 0;
+  box-shadow: 2px 2px 8px #666;
+}
+
+.card-group .card:nth-of-type(1),
+.card-group .card:nth-of-type(3) {
+  transform: scale(.8);
+}
+
+.card-group .img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-group .card img:nth-of-type(1) {
+  width: 150%;
+  height: 80%;
+}
+
+.card-group .text {
+  padding: 0 15%;
+
+}
+
+.card-group .text p {
+  font-size: 12px;
+  line-height: 24px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.card-group .btn {
+  position: absolute;
+  width: 40%;
+  inset: 0;
+  margin: auto;
+  transform: translateY(50%);
+}
+
+.card-group .btn i:nth-of-type(1) {
+  position: absolute;
+  margin-right: 100%;
+  cursor: pointer;
+}
+
+.card-group .btn i:nth-of-type(2) {
+  position: absolute;
+  margin-left: 100%;
+  cursor: pointer;
+}
+
+
+
+/************************************************************************************* service ***************************************************/
+.service {
+  width: 100%;
+  position: relative;
+}
+
+.service .title-cloud {
+  left: 0;
+  transform: rotate(180deg);
+  top: -5%;
+}
+
+.service .title-cloud p {
+  position: absolute;
+  transform: rotate(-90deg) translate(100%, 10%);
+  bottom: 0;
+}
+
+.service .row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service .card {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.service .text {
+  width: 50%;
+}
+
+.service .text .title,
+.service .text p {
+  text-align: center;
+  margin-bottom: 5%;
+
+}
+
+.service .btn-more a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background: #93B5C6;
+  border-radius: 100px;
+  width: 50%;
+  padding: 5px 0;
+  inset: 0;
+  margin: auto;
+  transition: all .3s ease-in-out;
+}
+
+.service .btn-more a:hover {
+  background: #FFD750;
+  color: #333;
+}
+
+.service .img {
+  width: 50%;
+  position: relative;
+}
+
+.service .img img:nth-of-type(1) {
+  width: 100%;
+}
+
+.service .img img:nth-of-type(2) {
+  position: absolute;
+  left: 50%;
+  width: 43%;
+  transform: translate(30%, 80%);
+}
+
+.service .card:nth-of-type(even) {
+  flex-direction: row-reverse;
+
+}
+
+.service .card:nth-of-type(even) .img img:nth-of-type(2) {
+  transform: translate(-130%, 70%);
+}
