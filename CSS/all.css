@@ -223,7 +223,7 @@ h1 {
   width: 100%;
   height: 10vw;
   background-size: cover;
-  background-image: url(./img/Vector.png);
+  background-image: url(../img/Vector.png);
   background-repeat: no-repeat;
   left: 0;
   bottom: 100%;
@@ -236,7 +236,7 @@ h1 {
   width: 100%;
   height: 15vw;
   background-size: cover;
-  background-image: url(./img/Vector\ \(1\).png);
+  background-image: url(../img/Vector\ \(1\).png);
   left: 0;
   top: 99%;
   background-repeat: no-repeat;
@@ -330,7 +330,7 @@ h1 {
 
 /************************************************************************************* footer ***************************************************/
 footer {
-  background-image: url(./img/footer.png);
+  background-image: url(../img/footer.png);
   background-size: cover;
   height: fit-content;
   width: 100%;
