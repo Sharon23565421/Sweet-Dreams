@@ -7,7 +7,7 @@
 
 header .menu .text {
     display: flex;
-    width: 38%;
+    width: 40%;
     justify-content: space-between;
     align-items: center;
     left: 0;
@@ -19,6 +19,15 @@ header .menu .text {
 
 header .menu span{
     margin: 0 8%;
+    background: transparent;
+    cursor: pointer;
+    padding: 0 10%;
+    transition: .3s;
+}
+
+header .menu span:hover{
+background: #ffd750;
+border-radius: 50px;
 }
 
 header .menu .cat,
