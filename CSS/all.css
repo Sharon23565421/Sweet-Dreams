@@ -527,11 +527,9 @@ header .text input {
 
 
 
-/**********************************************************************                                     logo-ad
+/**********************************************************************                                     logo-marquee
    ***************************************************************************************/
-.logo-ad {
-  max-width: none;
-  position: relative;
+.logo-marquee {
   width: 100%;
   margin: 11.71875% 0;
   display: flex;
@@ -541,7 +539,7 @@ header .text input {
   justify-content: center;
 }
 
-.logo-ad p {
+.logo-marquee p {
   width: 60%;
   color: #ffd750;
   font-size: 84px;
