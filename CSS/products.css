@@ -1,3 +1,41 @@
+/*******************************************************************************header***************************************************/
+.icon,
+.text {
+    position: absolute;
+    z-index: 2;
+}
+
+header .menu .text {
+    display: flex;
+    width: 38%;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    top: 6%;
+    white-space: nowrap;
+}
+
+header .menu span{
+    margin: 0 8%;
+}
+
+header .menu .cat,
+header .menu .dog{
+    display: flex;
+    justify-content: center;
+}
+
+.menu .icon{
+    position: absolute;
+    top: 6%;
+    padding: 1% 1% 1% 3%;
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
 /*******************************************************************************favorable***************************************************/
 
 
@@ -26,13 +64,13 @@
     margin-bottom: 3%;
 }
 
- i{
+i {
     color: #333;
     cursor: pointer;
 }
 
-i:hover{
-color: #ffd750;
+i:hover {
+    color: #ffd750;
 }
 
 .favorable .card .img {
@@ -182,7 +220,7 @@ color: #ffd750;
     align-items: center;
 }
 
-.trainer .wrap:nth-of-type(3){
+.trainer .wrap:nth-of-type(3) {
     margin-top: 5%;
     flex-direction: row-reverse;
 }
@@ -190,7 +228,7 @@ color: #ffd750;
 .trainer .img {
     width: 50%;
     height: auto;
-    padding:0 5%;
+    padding: 0 5%;
 }
 
 .trainer .img img {
@@ -219,13 +257,13 @@ color: #ffd750;
 
 }
 
-.trainer .card-body{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-height: 80%;
-align-content: space-between;
-border-top: 1px solid #bbb;
+.trainer .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 80%;
+    align-content: space-between;
+    border-top: 1px solid #bbb;
 }
 
 .trainer .card-title {
@@ -244,7 +282,7 @@ border-top: 1px solid #bbb;
 .trainer .pic img {
     width: 100%;
     height: 100%;
-    
+
 }
 
 .trainer .products-card .text {
@@ -253,7 +291,7 @@ border-top: 1px solid #bbb;
 }
 
 .trainer .products-card:nth-of-type(1),
-.trainer .products-card:nth-of-type(2){
+.trainer .products-card:nth-of-type(2) {
     border-right: 1px solid #bbb;
 }
 
@@ -261,7 +299,7 @@ border-top: 1px solid #bbb;
     border-top: 1px solid #bbb;
     position: relative;
     padding-top: 5%;
-width: 100%;
+    width: 100%;
 }
 
 .trainer .card-icon i {
@@ -269,13 +307,13 @@ width: 100%;
 
 }
 
-.trainer .price{
+.trainer .price {
     width: 100%;
     font-weight: bold;
-} 
+}
 
-.trainer .number{
-     width: 100%;
+.trainer .number {
+    width: 100%;
 }
 
 .trainer .number-select {
@@ -287,4 +325,3 @@ width: 100%;
     text-align: center;
     margin: 3%;
 }
-
