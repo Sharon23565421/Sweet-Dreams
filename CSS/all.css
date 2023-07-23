@@ -530,6 +530,7 @@ header .text input {
 /**********************************************************************                                     logo-ad
    ***************************************************************************************/
 .logo-ad {
+  max-width: none;
   position: relative;
   width: 100%;
   margin: 11.71875% 0;
@@ -541,7 +542,7 @@ header .text input {
 }
 
 .logo-ad p {
-  width: fit-content;
+  width: 60%;
   color: #ffd750;
   font-size: 84px;
   font-family: Lilita One;
