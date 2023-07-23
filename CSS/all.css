@@ -148,14 +148,13 @@ h1 {
   justify-content: center;
 }
 
-.text .btn:hover
-{
+.text .btn:hover {
   background: #FFD750;
   color: #333;
 }
 
 .text .btn i,
-.text .btn span{
+.text .btn span {
   color: white;
 }
 
@@ -227,12 +226,12 @@ header .btn-main .btn:nth-of-type(3) label {
   margin-inline: 5%;
 }
 
-#service-spread:checked~.btn-main>label:nth-of-type(1){
+#service-spread:checked~.btn-main>label:nth-of-type(1) {
   background: #FFD750;
   color: #333;
 }
 
-#about-spread:checked~.btn-main>label:nth-of-type(2){
+#about-spread:checked~.btn-main>label:nth-of-type(2) {
   background: #FFD750;
   color: #333;
 }
@@ -531,10 +530,10 @@ header .text input {
 /**********************************************************************                                     logo-ad
    ***************************************************************************************/
 .logo-ad {
-  display: flex;
+  position: relative;
   width: 100%;
-  height: fit-content;
   margin: 11.71875% 0;
+  display: flex;
   overflow: hidden;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -588,11 +587,11 @@ footer .text {
   margin: 0 5%;
 }
 
-footer .img{
+footer .img {
   text-align: end;
 }
 
-footer .img img{
+footer .img img {
   width: 60%;
 }
 
