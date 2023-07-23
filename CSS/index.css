@@ -19,7 +19,7 @@ header {
   margin-bottom: 11.71875%;
 }
 
-header .container{
+header .wrap-group {
   max-width: 1920px;
 }
 
@@ -33,16 +33,19 @@ header .wrap {
 
 header .logo-group {
   width: 50%;
+  position: relative;
 }
 
 header .logo {
   position: absolute;
   z-index: 1;
-  width: fit-content;
+  width: 70%;
   height: fit-content;
+  left: 50%;
+  transform: translatex(-80%);
   top: 0;
   bottom: 0;
-  margin: auto;
+  margin-block: auto;
 }
 
 .logo span {
@@ -56,12 +59,21 @@ header .logo {
   letter-spacing: 7.80px;
 }
 
-.logo img {
-  position: relative;
-  transform: translate(180%, 60%);
+.logo-img {
+  position: absolute;
+  left: 50%;
+  transform: translate(15%, -50%);
   width: 34.6875%;
-  height: auto;
+}
 
+.logo img {
+  width: 100%;
+
+}
+
+.logo-text {
+  width: fit-content;
+  margin: auto;
 }
 
 .logo span:nth-of-type(1) {
@@ -94,17 +106,58 @@ header .logo {
   width: 50%;
 }
 
+.img-givemefive:hover img{
+  animation-play-state: paused;
+ 
+}
+
 .img-givemefive img {
+  position: absolute;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  animation: slider 25s linear infinite;
+}
+
+.img-givemefive img:nth-child(5){
+  animation-delay: 0s;
+}
+
+.img-givemefive img:nth-child(4) {
+  animation-delay: 5s;
+}
+
+.img-givemefive img:nth-child(3) {
+  animation-delay: 10s;
+}
+
+.img-givemefive img:nth-child(2) {
+  animation-delay: 15s;
+}
+
+.img-givemefive img:nth-child(1) {
+  animation-delay: 20s;
+}
+
+@keyframes slider {
+  4% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  34% {
+    opacity: 0;
+  }
 }
 
 .cat {
   position: absolute;
-  width: 18%;
+  width: 36%;
   height: auto;
-  left: 50%;
-  transform: translate(0,50%);
+  top: 5%;
 }
 
 .cat img {
@@ -114,10 +167,10 @@ header .logo {
 
 .shiba {
   position: absolute;
-  width: 26.58%;
-  height: auto;
+  width: 52%;
+  /* height: auto; */
   left: 50%;
-  transform: translate(80%, 200%);
+  transform: translate(-10%, 190%);
 }
 
 .shiba img {
@@ -131,7 +184,7 @@ header .logo {
 
 /******************************************************************************************************** banner**********************************************************************/
 .banner {
-  background-image: url(./img/Vector\ 9.png);
+  background-image: url(../img/Vector\ 9.png);
   background-repeat: no-repeat;
   background-position: right 0 top 35%;
 }
@@ -154,6 +207,8 @@ header .logo {
   position: relative;
 }
 
+.banner .item .text {}
+
 .banner .item .text span,
 .banner .item .title {
   color: white;
@@ -165,7 +220,7 @@ header .logo {
 }
 
 .banner .title p {
-  background: #FFE176;
+  background: #ffd750;
   width: fit-content;
   color: white;
   padding: 0 20px;
@@ -364,3 +419,8 @@ header .logo {
 .service .card:nth-of-type(even) .img img:nth-of-type(2) {
   transform: translate(-130%, 70%);
 }
+
+
+/*************************************************************************************navbar***************************************************/
+
+#navbar {}

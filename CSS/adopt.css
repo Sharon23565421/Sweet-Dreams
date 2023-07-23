@@ -1,0 +1,218 @@
+
+/**********************************************************************                                     new-adopt
+   ***************************************************************************************/
+.new-adopt .title {
+    margin-top: 11.71875%;
+    text-align: center;
+}
+
+.new-adopt .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 25%;
+}
+
+.new-adopt .card {
+    margin-top: 5%;
+    background: white;
+    border-radius: 50px;
+    display: flex;
+    width: 30%;
+    padding: 1% 2%;
+    align-items: center;
+}
+
+.new-adopt .wrap-group {
+    padding: 3%;
+}
+
+.new-adopt .wrap {
+    display: flex;
+    /* justify-content: center; */
+    margin-bottom: 3%;
+    padding: 5%;
+}
+
+.icon {
+    text-align: center;
+    width: 15%;
+    margin-right: 5%;
+}
+
+.more {
+    padding: 3%;
+    background: #93B5C6;
+    border-radius: 50px;
+    width: 80%;
+    inset: 0;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.more a {
+    text-decoration: none;
+    color: white;
+}
+
+.more:hover {
+    background: #ffd750;
+  }
+  
+  .more:hover a {
+    color: #333;
+  }
+
+
+/**********************************************************************                                     banner
+   ***************************************************************************************/
+
+.banner .wrap div {
+    width: 14%;
+    margin: 5% 0;
+}
+
+.banner .wrap div:hover img {
+    transform: scale(1.2);
+}
+
+.banner .wrap img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: .3s;
+}
+
+
+/**********************************************************************                                     before-adopt
+   ***************************************************************************************/
+
+.before-adopt .title {
+    text-align: center;
+}
+
+.before-adopt .card {
+    display: flex;
+    padding: 5%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.before-adopt .card:nth-of-type(2) {
+    flex-direction: row;
+}
+
+.before-adopt .img,
+.before-adopt .text {
+    width: 48%;
+}
+
+.before-adopt .cloud {
+    position: absolute;
+    left: 50%;
+    transform: rotateY(180deg);
+}
+
+.before-adopt .card:nth-of-type(1) .cloud,
+.before-adopt .card:nth-of-type(3) .cloud {
+    translate: -160% -80%;
+}
+
+.before-adopt .card:nth-of-type(2) .cloud {
+    translate: 60% -70%;
+}
+
+
+/**********************************************************************                                     search
+   ***************************************************************************************/
+.search {
+    max-width: 1280px;
+    inset: 0;
+    margin: auto;
+    padding: 0 3%;
+}
+
+
+.search .title {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.search .menu-group{
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.search .menu{
+    width: 70%;
+}
+
+.search .gender{
+margin-right: 3%;
+}
+
+.search select,
+.search .search-btn{
+    background: #93B5C6;
+    color: white;
+    padding: 3%;
+    border-radius: 50px;
+    border: none;
+
+}
+
+.search .search-btn{
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.search .search-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.search .search-btn:hover {
+    background: #ffd750;
+  }
+  
+  .search .search-btn:hover a {
+    color: #333;
+  }
+
+.search .container{
+    justify-content: space-between;
+}
+
+.search .card{
+    width: 48%;
+    display: flex;
+    padding: 2%;
+    background: white;
+    border-radius: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.search .card .img,
+.search .card .wrap-group{
+    width: 48%;
+}
+
+.search .card .wrap{
+    display: flex;
+    margin-top: 5%;
+}
+
+.search .more{
+    width: 50%;
+    margin-top: 5%;
+}

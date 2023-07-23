@@ -1,0 +1,122 @@
+.container {
+    padding: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-class .text,
+.about-us .text,
+.banner .text,
+.image {
+    width: 48%;
+}
+
+/*********************************************************************                                          
+    about-us
+   ***************************************************************************************/
+
+
+.about-us .container {
+    margin-top: 4.45312%;
+
+}
+
+.about-us .title ,
+.about-class .title{
+    margin-bottom: 3%;
+}
+
+/*********************************************************************                                          
+    banner
+   ***************************************************************************************/
+
+.banner .container{
+    justify-content: space-between;
+}
+
+.banner .text{
+    color: white;
+}
+
+
+/*********************************************************************                                          
+    about-class
+   ***************************************************************************************/
+
+.about-class .container{
+    padding: 0 5%;
+}
+
+.about-class .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.about-class .card:nth-of-type(1){
+     margin-bottom: 10%;
+}
+
+.about-class .card:nth-of-type(2){
+    flex-direction: row-reverse;
+}
+
+.about-class .cloud{
+    position: absolute;
+}
+
+.about-class .card:nth-of-type(1) .cloud{
+    transform: rotatey(180deg) translate(-70%, -200%);
+}
+
+.about-class .card:nth-of-type(2) .cloud{
+    transform: rotatey(180deg) translate(10%, -280%);
+}
+
+
+
+/*********************************************************************                                          
+    album
+   ***************************************************************************************/
+.album .title{
+    text-align: center;
+}
+
+.album .container{
+    justify-content: center;
+    padding: 5% 3%;
+}
+
+.album .img{
+    width: 24%;
+    margin: 1px;
+    overflow: hidden;
+}
+
+.album img{
+    scale: 1;
+    transition: 1s;
+}
+
+.album .img:hover img{
+    scale: 1.2;
+}
+
+
+.album .img:nth-of-type(1){
+    border-radius: 50px 0 0 0 ;
+}
+
+.album .img:nth-of-type(4){
+    border-radius:  0 50px 0 0 ;
+}
+
+.album .img:nth-of-type(12){
+    border-radius:  0 0 50px 0 ;
+}
+
+.album .img:nth-of-type(9){
+    border-radius:  0 0 0 50px;
+}
+

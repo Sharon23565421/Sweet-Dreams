@@ -24,7 +24,8 @@
 }
 
 .problem .container:nth-of-type(2) .img img {
-    animation: bark 8s ease -2s infinite ;
+    animation: bark 8s ease -2s infinite;
+    width: fit-content;
 }
 
 @keyframes bark {
@@ -33,7 +34,7 @@
     }
 
     96% {
-        transform: scale(1) rotate(5deg) ;
+        transform: scale(1) rotate(5deg);
     }
 
     100% {
@@ -42,7 +43,8 @@
 }
 
 .problem .container:nth-of-type(3) .img img {
-    animation:shake 3s  -2s infinite ;
+    animation: shake 3s -2s infinite;
+    width: fit-content;
 }
 
 @keyframes shake {
@@ -91,7 +93,7 @@
 }
 
 .problem .title p {
-    background: #FFE176;
+    background: #ffd750;
     width: fit-content;
     color: white;
     padding: 0 20px;
@@ -123,13 +125,20 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 15%;
+    width: 14%;
     background: white;
     border-radius: 30px;
-    padding: 10px;
+    padding: 1%;
     justify-content: start;
     align-content: flex-start;
     margin: 5% 0;
+    scale: 1;
+    transition: .3s .3s;
+}
+
+.banner .card:hover{
+scale: 1.2;
+transition: .3s;
 }
 
 .banner .card .name {
@@ -173,7 +182,6 @@
 
 
 
-
 /**********************************************************************                                     about
    ***************************************************************************************/
 
@@ -197,7 +205,7 @@
     width: 50%;
 }
 
-.about .img img{
+.about .img img {
     width: 100%;
     height: 100%;
 }
@@ -209,6 +217,7 @@
    ***************************************************************************************/
 .class {
     margin-bottom: 11.71875%;
+    position: relative;
 }
 
 .class .container {
@@ -243,12 +252,12 @@
 
 .class .text {
     height: 50%;
-    border-bottom: 1px solid #93B5C6;
     padding-bottom: 3%;
 }
 
 .class .price {
     padding: 10% 0;
+    border-top: 1px solid #93B5C6;
 }
 
 .class .more-btn {
@@ -259,44 +268,113 @@
     inset: 0;
     margin: auto;
     padding: .6% 5%;
+    display: block;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
 }
 
 .class .more-btn:hover {
-    background: #FFE176;
+    background: #ffd750;
     color: #333;
 }
 
-.class .more-btn:hover a {
+.class .more-btn:hover {
     color: #333;
 }
 
-
-.class .more-btn a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.class button {
+.class .button {
     background: #Ffbbbb;
     border-radius: 50px;
     transition: .3s;
     padding: .6% 5%;
     border: none;
-    cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
-.class button:hover {
-    background: #FFE176;
-}
-
-.class button:hover a {
+.class .button:hover {
+    background: #ffd750;
     color: #333;
 }
 
-.class button a {
+.class .about {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: start;
+    background: rgba(0, 0, 0, 0.76);
+    height: 100vh;
+    inset: 0;
+    margin: auto;
+    padding: 3%;
+    transform: translatex(-100%);
+    transition: .3s;
+}
+
+.class .about .title{
+    margin-bottom: 3%;
+}
+
+.class .s-title,
+.class .about .text {
+    color: white;
+}
+
+.class .about .title,
+.class .about p {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.class .about .cat,
+.class .about .dog {
+    padding: 3%;
+    width: 45%;
+    margin-top: 3%;
+}
+
+.class .about .btn a {
     text-decoration: none;
     color: white;
+}
+
+.class .about .btn {
+    padding: 1% 3%;
+    background: #93B5C6;
+    border-radius: 50px;
+    inset: 0;
+    margin: auto;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.class .about .btn:hover {
+    background: #ffd750;
+}
+
+.class .about .btn:hover a {
+    color: #333;
+}
+
+
+
+.class .about .group {
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 3% 0;
+}
+
+#onebyone-class,
+#group-class {
+    display: none;
+}
+
+#onebyone-class:checked~.about,
+#group-class:checked~.about{
+    transform: translatex(0%);
 }

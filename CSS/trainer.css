@@ -1,0 +1,149 @@
+.about-trainer .title {
+    text-align: center;
+    margin-top: 4.45312%;
+}
+
+.about-trainer p {
+    margin: 3% 0;
+    width: 40%;
+    inset: 0;
+    margin-inline: auto;
+}
+
+.about-trainer .container {
+    padding: 0 5%;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+
+.about-trainer .container a:nth-of-type(odd) {
+    transform: translateY(30%);
+}
+
+.trainer-btn a {
+    text-decoration: none;
+    position: relative;
+
+}
+
+.trainer-btn a .text {
+    position: absolute;
+    background: #0008;
+    color: white;
+    border-radius: 50%;
+    width: 95%;
+    height: 95%;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+
+.trainer-btn a .text i{
+    position: absolute;
+    color: white;
+    bottom: 20%;
+}
+
+.trainer-btn a:hover .text{
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
+.trainer-btn a:hover img{
+    animation: swing 1s 1s steps(2, end) infinite alternate;
+}
+
+
+/*************************************************************************************trainer***************************************************/
+.trainer .container {
+    padding: 0 5%;
+    justify-content: space-evenly;
+    align-items: self-start;
+    margin-bottom: 8%;
+    position: relative;
+}
+
+
+.trainer .text,
+.trainer .card {
+    width: 35%;
+}
+
+.trainer .card {
+    text-align: center;
+
+}
+
+.trainer .img {
+    width: 60%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+
+.trainer .btn {
+    margin-top: 5%;
+    background: #93B5C6;
+    width: 30%;
+    padding: 2%;
+    border-radius: 30px;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.trainer .btn:hover {
+    background: #ffd750;
+}
+
+.trainer .btn:hover a {
+    color: #333;
+}
+
+.trainer .btn a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.hover .container,
+.melly .container {
+    flex-direction: row-reverse;
+}
+
+.trainer .container .cloud {
+    position: absolute;
+}
+
+.trainer .ken .cloud,
+.trainer .jason .cloud {
+    left: 50%;
+    transform: rotatey(180deg) translate(150%, -50%);
+}
+
+.trainer .hover .cloud {
+    left: 50%;
+    transform: translate(50%, -50%);
+}
+
+.trainer .sharon .cloud {
+    left: 50%;
+    transform: translate(-150%, -50%);
+}
+
+.trainer .melly .cloud {
+    left: 50%;
+    transform: rotateY(180deg) translate(-50%, -50%);
+}

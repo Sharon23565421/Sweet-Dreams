@@ -18,11 +18,63 @@
 <body>
     <header>
         <div class="header">
+            <input type="checkbox" name="navbar" id="navbar">
+            <div class="wrap-group">
+                <div class="navbar">
+                    <label class="navbar-img"
+                    for="navbar"  id="navbar-btn">
+                        <div class="navbar-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </label>
+                    <div class="block">
+                        <div class="img">
+                            <img src="../img/23542835 (1).png" alt="">
+                        </div>
+    
+                        <div class="text">
+                            <input type="checkbox" name="service-spread" id="service-spread">
+                            <input type="checkbox" name="about-spread" id="about-spread">
+                            <div class="btn-main">
+                                <label for="service-spread" class="btn">
+                                        提供服務
+                                </label>
+                                <label for="about-spread" class="btn">
+                                        關於我們
+                                </label>
+                                <div class="btn">
+                                    <i class="fa-solid fa-user fa-lg" ></i>
+                                    <span>
+                                        會員登入
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="btn-item">
+                                <div class="item service-item">
+                                        <a href="../HTML/rectification.html" class="btn">行為矯正</a>
+                                        <a href="../HTML/beauty.html" class="btn">寵物美容</a>
+                                        <a href="../HTML/products.html" class="btn">寵物用品</a>
+                                        <a href="../HTML/adpot.html" class="btn">領養專區</a>
+                                </div>
+    
+                                <div class="item about-item">
+                                        <a href="../HTML/about.html" class="btn">
+                                            關於我們
+                                        </a>
+                                        <a href="../HTML/trainer.html" class="btn">
+                                            訓練師介紹
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
             <div class="wrap">
                 <img src="../img/Group 27 1.png" alt="">
-                <div class="navbar-btn">
-                    <img src="../img/navbar-btn.png" alt="">
-                </div>
                 <a href="../index.html">
                     <img src="../img/Frame 16.png" alt="">
                 </a>
@@ -33,15 +85,17 @@
             <h1>寵物用品</h1>
         </div>
         <div class="goback-btn">
-            <img src="../img/top-btn.png" alt="">
+            <a href="#navbar-btn">
+                <img src="../img/top-btn.png" alt="">
+            </a>
         </div>
     </header>
 
-    <div class="roll-btn">
+    <section class="roll-btn">
         <div class="container">
             <div class="row">
                 <div class="circle">
-                    <a class="btn" href="#problem">
+                    <a class="btn" href="#favorable">
                         <p>超值優惠</p>
                         <i class="fa-solid fa-angle-down fa-lg"></i>
 
@@ -54,38 +108,41 @@
                     </a>
                 </div>
                 <div class="circle">
-                    <a class="btn" href="#about">
+                    <a class="btn" href="#brand">
                         <p>品牌分類</p>
                         <i class="fa-solid fa-angle-down fa-lg"></i>
                     </a>
                 </div>
                 <div class="circle">
-                    <a class="btn" href="#class">
+                    <a class="btn" href="#trainer">
                         <p>訓練師精選</p>
                         <i class="fa-solid fa-angle-down fa-lg"></i>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="favorable">
+    <section class="favorable" id="favorable">
         <div class="container">
             <div class="title">
                 毛孩最愛｜超值優惠
             </div>
             <div class="card">
                 <div class="img">
-                    <img src="./img/Frame 144.png" alt="">
+                    <img src="../img/Frame 144.png" alt="">
                 </div>
                 <div class="text">
-                    好開心貓草<br>
-                    (南瓜添加)108克<br>
-                    $339
+                    <p>
+                        好開心貓草<br>
+                        (南瓜添加)108克<br>
+                        $339
+                    </p>
+
 
                     <div class="icon-img">
-                        <i class="fa-solid fa-heart fa-lg" style="color: #333333;"></i>
-                        <i class="fa-solid fa-cart-shopping fa-lg" style="color: #333333;"></i>
+                        <i class="fa-solid fa-heart fa-lg" ></i>
+                        <i class="fa-solid fa-cart-shopping fa-lg" ></i>
                     </div>
                 </div>
             </div>
@@ -95,13 +152,16 @@
                     <img src="../img/Frame 145.png" alt="">
                 </div>
                 <div class="text">
-                    超吸收抗菌尿布墊<br>
-                    一片抵三片<br>
-                    $219
+                    <p>
+                        超吸收抗菌尿布墊<br>
+                        一片抵三片<br>
+                        $219
+                    </p>
+
 
                     <div class="icon-img">
-                        <i class="fa-solid fa-heart fa-lg" style="color: #333333;"></i>
-                        <i class="fa-solid fa-cart-shopping fa-lg" style="color: #333333;"></i>
+                        <i class="fa-solid fa-heart fa-lg" ></i>
+                        <i class="fa-solid fa-cart-shopping fa-lg" ></i>
                     </div>
                 </div>
             </div>
@@ -111,12 +171,15 @@
                     <img src="../img/Frame 146.png" alt="">
                 </div>
                 <div class="text">
-                    仙人掌貓抓柱<br>
-                    $549
+                    <p>
+                        仙人掌貓抓柱<br>
+                        $549
+                    </p>
+
 
                     <div class="icon-img">
-                        <i class="fa-solid fa-heart fa-lg" style="color: #333333;"></i>
-                        <i class="fa-solid fa-cart-shopping fa-lg" style="color: #333333;"></i>
+                        <i class="fa-solid fa-heart fa-lg" ></i>
+                        <i class="fa-solid fa-cart-shopping fa-lg" ></i>
                     </div>
                 </div>
             </div>
@@ -126,12 +189,15 @@
                     <img src="../img/Frame 147.png" alt="">
                 </div>
                 <div class="text">
-                    聖誕風項圈<br>
-                    $339
+                    <p>
+                        聖誕風項圈<br>
+                        $339
+                    </p>
+
 
                     <div class="icon-img">
-                        <i class="fa-solid fa-heart fa-lg" style="color: #333333;"></i>
-                        <i class="fa-solid fa-cart-shopping fa-lg" style="color: #333333;"></i>
+                        <i class="fa-solid fa-heart fa-lg" ></i>
+                        <i class="fa-solid fa-cart-shopping fa-lg" ></i>
                     </div>
                 </div>
             </div>
@@ -141,12 +207,15 @@
                     <img src="../img/Frame 148.png" alt="">
                 </div>
                 <div class="text">
-                    時尚貓狗外出籠<br>
-                    $1339
+                    <p>
+                        時尚貓狗外出籠<br>
+                        $1339
+                    </p>
+
 
                     <div class="icon-img">
-                        <i class="fa-solid fa-heart fa-lg" style="color: #333333;"></i>
-                        <i class="fa-solid fa-cart-shopping fa-lg" style="color: #333333;"></i>
+                        <i class="fa-solid fa-heart fa-lg" ></i>
+                        <i class="fa-solid fa-cart-shopping fa-lg" ></i>
                     </div>
                 </div>
             </div>
@@ -156,27 +225,30 @@
                     <img src="../img/Frame 149.png" alt="">
                 </div>
                 <div class="text">
-                    訓練師推薦<br>
-                    逗貓棒<br>
-                    $339
+                    <p>
+                        訓練師推薦<br>
+                        逗貓棒<br>
+                        $339
+                    </p>
+
 
                     <div class="icon-img">
-                        <i class="fa-solid fa-heart fa-lg" style="color: #333333;"></i>
-                        <i class="fa-solid fa-cart-shopping fa-lg" style="color: #333333;"></i>
+                        <i class="fa-solid fa-heart fa-lg" ></i>
+                        <i class="fa-solid fa-cart-shopping fa-lg" ></i>
                     </div>
                 </div>
             </div>
 
         </div>
-    </div>
+    </section>
 
-    <div class="banner" id="banner">
+    <section class="banner" id="banner">
         <div class="heart-btn">
             <i class="fa-solid fa-heart fa-2xl" style="color: #ffbbbb;"></i>
         </div>
 
         <div class="title">
-            來看看美容師們的作品吧!
+            熱門商品
         </div>
         <div class="wrap">
             <div href="">
@@ -201,9 +273,9 @@
         <div class="more-btn">
             <a href="">查看更多</a>
         </div>
-    </div>
+    </section>
 
-    <div class="brand">
+    <section class="brand" id="brand">
         <div class="container">
             <div class="title">
                 品牌分類
@@ -235,9 +307,9 @@
 
 
         </div>
-    </div>
+    </section>
 
-    <div class="keyword">
+    <section class="keyword">
         <div class="wrap">
             <div class="title">
                 熱門關鍵字
@@ -264,10 +336,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="trainer">
-        <div class="container">
+    <section class="trainer" id="trainer">
+        <div class="wrap-group">
             <div class="title">
                 訓練師精選
             </div>
@@ -287,21 +359,35 @@
                                 <img src="../img/Mask group (16).png" alt="">
                             </div>
                             <div class="text">
-                                貓咪外出背帶+牽繩組
+                                貓咪外出背帶
+                                <br>+<br>牽繩組
                             </div>
 
                             <div class="number">
-                                <p>選擇數量
-                                </p>
-                                <i class="fa-solid fa-angle-down" style="color: #333333;"></i>
+                                <select class="number-select" id="" required>
+                                    <option value="">請選擇數量</option>
+                                    <option value="">1</option>
+
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+
+                                </select>
+                                <div class="price">
+                                    $888
+                                </div>
                             </div>
-                            <div class="price">
-                                $888
-                            </div>
+
                         </div>
                         <div class="card-icon">
-                            <i class="fa-solid fa-heart fa-xl" style="color: #333333;"></i>
-                            <i class="fa-solid fa-cart-shopping fa-xl" style="color: #333333;"></i>
+                            <i class="fa-solid fa-heart fa-xl" ></i>
+                            <i class="fa-solid fa-cart-shopping fa-xl" ></i>
                         </div>
                     </div>
                     <div class="products-card">
@@ -314,22 +400,36 @@
                                 <img src="../img/Mask group (15).png" alt="">
                             </div>
                             <div class="text">
-                                愛貓專用 天然豬肉零食 <br>
+                                愛貓專用
+                                <br>天然豬肉零食 <br>
                                 150gx3包入
                             </div>
 
                             <div class="number">
-                                <p>選擇數量
-                                </p>
-                                <i class="fa-solid fa-angle-down" style="color: #333333;"></i>
+                                <select class="number-select" id="" required>
+                                    <option value="">請選擇數量</option>
+                                    <option value="">1</option>
+
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+
+                                </select>
+                                <div class="price">
+                                    $659
+                                </div>
                             </div>
-                            <div class="price">
-                                $659
-                            </div>
+
                         </div>
                         <div class="card-icon">
-                            <i class="fa-solid fa-heart fa-xl" style="color: #333333;"></i>
-                            <i class="fa-solid fa-cart-shopping fa-xl" style="color: #333333;"></i>
+                            <i class="fa-solid fa-heart fa-xl" ></i>
+                            <i class="fa-solid fa-cart-shopping fa-xl" ></i>
                         </div>
                     </div>
                     <div class="products-card">
@@ -347,25 +447,212 @@
                             </div>
 
                             <div class="number">
-                                <p>選擇數量
-                                </p>
-                                <i class="fa-solid fa-angle-down" style="color: #333333;"></i>
+                                <select class="number-select" id="" required>
+                                    <option value="">請選擇數量</option>
+                                    <option value="">1</option>
+
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+
+                                </select>
+                                <div class="price">
+                                    $179
+                                </div>
                             </div>
-                            <div class="price">
-                                $179
-                            </div>
+
                         </div>
                         <div class="card-icon">
-                            <i class="fa-solid fa-heart fa-xl" style="color: #333333;"></i>
-                            <i class="fa-solid fa-cart-shopping fa-xl" style="color: #333333;"></i>
+                            <i class="fa-solid fa-heart fa-xl" ></i>
+                            <i class="fa-solid fa-cart-shopping fa-xl" ></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="wrap">
+                <div class="img">
+                    <img src="../img/Frame 151.png" alt="">
+                </div>
+                <div class="card">
+                    <div class="products-card">
+                        <div class="card-title">
+                            多孩精選
+                        </div>
+
+                        <div class="card-body">
+                            <div class="pic">
+                                <img src="../img/Mask group (11).png" alt="">
+                            </div>
+                            <div class="text">
+                                多狗牽繩(不易斷材質)
+                                <br><br>
+                                可一次帶多狗出門
+                            </div>
+
+                            <div class="number">
+                                <select class="number-select" id="" required>
+                                    <option value="">請選擇數量</option>
+                                    <option value="">1</option>
+
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+
+                                </select>
+                                <div class="price">
+                                    $619
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-icon">
+                            <i class="fa-solid fa-heart fa-xl" ></i>
+                            <i class="fa-solid fa-cart-shopping fa-xl" ></i>
+                        </div>
+                    </div>
+                    <div class="products-card">
+                        <div class="card-title">
+                            安撫玩具精選
+                        </div>
+
+                        <div class="card-body">
+                            <div class="pic">
+                                <img src="../img/Mask group (12).png" alt="">
+                            </div>
+                            <div class="text">
+                                大象造型安撫玩具
+                                <br><br>
+                                (貓狗皆適用)
+                            </div>
+
+                            <div class="number">
+                                <select class="number-select" id="" required>
+                                    <option value="">請選擇數量</option>
+                                    <option value="">1</option>
+
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+
+                                </select>
+                                <div class="price">
+                                    $423
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-icon">
+                            <i class="fa-solid fa-heart fa-xl" ></i>
+                            <i class="fa-solid fa-cart-shopping fa-xl" ></i>
+                        </div>
+                    </div>
+                    <div class="products-card">
+                        <div class="card-title">
+                            零食精選
+                        </div>
+
+                        <div class="card-body">
+                            <div class="pic">
+                                <img src="../img/Mask group (13).png" alt="">
+                            </div>
+                            <div class="text">
+                                狗骨頭造型零食
+                                <br><br>
+                                400g x4包
+                            </div>
+
+                            <div class="number">
+                                <select class="number-select" id="" required>
+                                    <option value="">請選擇數量</option>
+                                    <option value="">1</option>
+
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+
+                                </select>
+                                <div class="price">
+                                    $1498
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-icon">
+                            <i class="fa-solid fa-heart fa-xl" ></i>
+                            <i class="fa-solid fa-cart-shopping fa-xl" ></i>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
-    </div>
+    </section>
 
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="img">
+                    <img src="../img/Frame 16.png" alt="">
+                </div>
+                <div class="text">
+                    <p>Sweet Dreams寵物行為矯正/美容</p>
+                    <p>
+                        地址 : 台北市中山北路十六段93號 <br>
+                        TEL : 02-5346-1235 <br>
+                        營業時間: <br>
+                    <p class="open-time">
+                        一 〜 六 &nbsp; 11:30〜22:00<br>
+                        日 &nbsp; 11:30〜20:00
+                    </p>
+                    </p>
+                </div>
+                <div class="follow">
+                    <p>關注我們</p>
+                    <div class="img">
+                        <a href="">
+                            <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-google fa-lg" style="color: #ffffff;"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-line fa-lg" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
