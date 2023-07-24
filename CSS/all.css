@@ -284,7 +284,7 @@ header .text input {
   position: absolute;
   cursor: pointer;
   width: 9%;
-  height: 14%;
+  height: 16%;
   z-index: 4;
   right: 0;
   top: 0;
@@ -537,7 +537,7 @@ header .text input {
 
 /**********************************************************************                                     logo-name
    ***************************************************************************************/
-.logo-wall {
+.logo-group {
   display: flex;
   margin: 11.71875% 0;
 }
