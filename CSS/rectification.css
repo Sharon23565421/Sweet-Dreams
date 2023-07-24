@@ -302,25 +302,38 @@ transition: .3s;
     position: fixed;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: start;
     background: rgba(0, 0, 0, 0.76);
     height: 100vh;
     inset: 0;
     margin: auto;
-    padding: 3%;
+    padding:3%;
     transform: translatex(-100%);
     transition: .3s;
 }
 
 .class .about .title{
-    margin-bottom: 3%;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 1%;
+}
+
+.class .s-title{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
 }
 
 .class .s-title,
 .class .about .text {
     color: white;
+}
+
+.class .about p{
+    font-size: 12px;
+    line-height: 18px;
 }
 
 .class .about .title,
@@ -330,11 +343,15 @@ transition: .3s;
     color: white;
 }
 
+.class .about .text{
+    padding-bottom: 8%;
+    line-height: 18px;
+}
+
 .class .about .cat,
 .class .about .dog {
-    padding: 3%;
+    padding:0 3%;
     width: 45%;
-    margin-top: 3%;
 }
 
 .class .about .btn a {
