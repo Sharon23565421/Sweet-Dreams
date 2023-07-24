@@ -537,24 +537,24 @@ header .text input {
 
 /**********************************************************************                                     logo-name
    ***************************************************************************************/
-.logo-group {
+.logo-name .logo-group {
   display: flex;
   margin: 11.71875% 0;
   overflow: hidden;
   height: 10vh;
 }
 
-.logo-wrapper {
+.logo-name .logo-wrapper {
   display: flex;
   animation: walk1 80s -5s linear infinite;
 }
 
-.logo-wrapper:nth-child(2) {
+.logo-name .logo-wrapper:nth-child(2) {
   animation: walk2 80s linear infinite;
   animation-delay: -45s;
 }
 
-.logo{
+.logo-name .logo{
   /* height: 150px; */
   margin: 0 10px;
   display: flex;
@@ -562,7 +562,7 @@ header .text input {
   align-items: center;
 }
 
-.logo span{
+.logo-name .logo span{
   width: 100%;
   color: #ffd750;
   font-size: 84px;
