@@ -540,6 +540,8 @@ header .text input {
 .logo-group {
   display: flex;
   margin: 11.71875% 0;
+  overflow: hidden;
+  height: 10vh;
 }
 
 .logo-wrapper {
