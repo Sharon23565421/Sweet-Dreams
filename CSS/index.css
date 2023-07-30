@@ -1,51 +1,47 @@
 .title-cloud {
   position: absolute;
-  width: 130px;
-  height: 300px;
+  width: 10%;
   z-index: 1;
 }
 
-.title-cloud p {
-  position: absolute;
-  font-size: 32px;
-  line-height: 62px;
-  font-style: italic;
-}
+
 
 /**********************************************************************                                      header ***************************************************************************************/
 header {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
-  margin-bottom: 11.71875%;
+  max-height: 1080px;
+  position: relative;
+  max-width: 1440px;
+  margin-inline: auto;
 }
 
 header .wrap-group {
-  max-width: 1920px;
+  height: 100%;
+  position: relative;
 }
 
 header .wrap {
+  height: 100%;
   display: flex;
-  height: 100vh;
   justify-content: center;
   position: relative;
-  margin-bottom: 20%;
 }
 
 header .logo-group {
   width: 50%;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 header .logo {
-  position: absolute;
+  position: relative;
   z-index: 1;
-  width: 70%;
-  height: fit-content;
-  left: 50%;
-  transform: translatex(-80%);
-  top: 0;
-  bottom: 0;
-  margin-block: auto;
+  width: 100%;
+  top: 10%;
+  right: 10%;
 }
 
 .logo span {
@@ -60,9 +56,8 @@ header .logo {
 }
 
 .logo-img {
-  position: absolute;
-  left: 50%;
-  transform: translate(15%, -50%);
+  position: relative;
+  transform: translate(170%, 40%);
   width: 34.6875%;
 }
 
@@ -93,22 +88,23 @@ header .logo {
   position: relative;
   display: block;
   width: fit-content;
-  /* transform: translate(0, 1230%); */
   font-size: 18px;
   font-family: Noto Sans TC;
   font-weight: 500;
   line-height: 32px;
-  letter-spacing: normal
+  letter-spacing: normal;
+  white-space: nowrap;
 }
 
 .img-givemefive {
   position: relative;
   width: 50%;
+  z-index: 1;
 }
 
-.img-givemefive:hover img{
+.img-givemefive:hover img {
   animation-play-state: paused;
- 
+
 }
 
 .img-givemefive img {
@@ -119,7 +115,7 @@ header .logo {
   animation: slider 25s linear infinite;
 }
 
-.img-givemefive img:nth-child(5){
+.img-givemefive img:nth-child(5) {
   animation-delay: 0s;
 }
 
@@ -154,10 +150,9 @@ header .logo {
 }
 
 .cat {
-  position: absolute;
+  position: relative;
   width: 36%;
-  height: auto;
-  top: 5%;
+  top: -60%;
 }
 
 .cat img {
@@ -166,11 +161,9 @@ header .logo {
 }
 
 .shiba {
-  position: absolute;
+  position: relative;
   width: 52%;
-  /* height: auto; */
-  left: 50%;
-  transform: translate(-10%, 190%);
+  top: 5%;
 }
 
 .shiba img {
@@ -179,44 +172,35 @@ header .logo {
 }
 
 
-
-
-
 /******************************************************************************************************** banner**********************************************************************/
 .banner {
   background-image: url(../img/Vector\ 9.png);
   background-repeat: no-repeat;
   background-position: right 0 top 35%;
+  padding: 11% 0;
 }
+
 
 .banner .container .img {
   position: relative;
   width: 50%;
+
 }
-
-
-
-.banner img {
-  width: 100%;
-}
-
 
 .banner .item {
   width: 50%;
-  padding-left: 40px;
   position: relative;
 }
 
-.banner .item .text {}
 
 .banner .item .text span,
 .banner .item .title {
   color: white;
-
 }
 
 .banner .item .title {
   margin-bottom: 20px;
+  text-align: start;
 }
 
 .banner .title p {
@@ -228,27 +212,16 @@ header .logo {
   margin-bottom: 10px;
 }
 
-.banner .bg-img img:nth-of-type(1) {
+.banner .cloud {
   position: absolute;
   left: 50%;
-  transform: scale(0.5) translate(-50%, -260%);
+  top: 0;
+  transform: translate(60%, -30%);
 }
 
-
-
-.card-group .title-cloud {
-
-  right: -10px;
-  top: -100px;
-}
-
-.title-cloud img {
-  width: 100%;
-  height: 100%;
-}
-
-.card-group .title-cloud p {
-  transform: rotate(90deg) translate(-180%, -50%);
+.banner .title-cloud {
+  right: 0;
+  top: -30%;
 }
 
 .card-group {
@@ -264,6 +237,8 @@ header .logo {
 .card-group .wrap {
   display: flex;
   justify-content: space-around;
+  z-index: 1;
+  position: relative;
 }
 
 .card-group .card {
@@ -312,10 +287,11 @@ header .logo {
 
 .card-group .btn {
   position: absolute;
-  width: 40%;
+  width: 35%;
   inset: 0;
   margin: auto;
   transform: translateY(50%);
+  left: -2%;
 }
 
 .card-group .btn i:nth-of-type(1) {
@@ -338,16 +314,13 @@ header .logo {
   position: relative;
 }
 
-.service .title-cloud {
-  left: 0;
-  transform: rotate(180deg);
-  top: -5%;
+.service .container {
+  position: relative;
 }
 
-.service .title-cloud p {
-  position: absolute;
-  transform: rotate(-90deg) translate(100%, 10%);
-  bottom: 0;
+.service .title-cloud {
+  top: -8%;
+  left: 0;
 }
 
 .service .row {
@@ -358,7 +331,7 @@ header .logo {
 }
 
 .service .card {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -421,6 +394,128 @@ header .logo {
 }
 
 
-/*************************************************************************************navbar***************************************************/
 
-#navbar {}
+
+
+/*************************************************************************************media***************************************************/
+
+
+@media screen and (min-width:1400px) {
+  .banner{
+    padding: 5% 0;
+  }
+}
+
+@media screen and (max-width:960px) {
+  header .img-givemefive img {
+    height: fit-content;
+    top: 45%;
+  }
+
+  .title-cloud {
+    width: 15%;
+    z-index: 2;
+  }
+
+  .card-group .card {
+    width: 50%;
+  }
+
+  .card-group .btn {
+    display: none;
+  }
+.banner{
+    padding: 11% 0;
+  }
+}
+
+
+@media screen and (max-width:767px) {
+  header .wrap {}
+
+  header .img-givemefive img {
+    height: fit-content;
+    top: 55%;
+  }
+
+  .logo span {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  header .logo {
+    right: 50%;
+    width: fit-content;
+  }
+
+  .logo span:nth-of-type(3) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  header .cat {
+    right: 50%;
+  }
+
+  header .shiba {
+    top: -15%;
+  }
+
+  
+
+  .banner .container {
+    flex-direction: column-reverse;
+  }
+
+  .banner>.container>.img,
+   .banner .item{
+    width: 100%;
+  }
+
+  .banner .title {
+    text-align: start;
+  }
+
+  .card-group .title {
+    text-align: center;
+  }
+
+  .card-group .wrap {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card-group .wrap .card {
+    width:100%;
+    transform: scale(1);
+  }
+
+  .banner .title-cloud {
+    top: -10%;
+    width: 25%;
+  }
+
+  .service .title-cloud {
+    top: -3%;
+    width: 25%;
+  }
+
+  .service .container {
+    margin-top: 11%;
+  }
+
+  .service .card {
+    flex-wrap: wrap;
+    margin: 11% 0;
+  }
+
+  .service .card .text,
+  .service .card .img {
+    width: 100%;
+    margin: 3% 0;
+  }
+
+
+
+
+}
