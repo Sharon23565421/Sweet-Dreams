@@ -20,6 +20,8 @@ img {
 body {
   background: #FAF6ED;
   background-image: url(../img/Group\ 2\ \(1\).png);
+  width: 100%;
+  height: 100%;
 
 }
 
@@ -72,17 +74,15 @@ body {
 .header {
   position: relative;
   width: 100%;
-  /* height: 80vh; */
   margin: auto;
+  max-width: 1920px;
 }
 
 .header img {
   width: 100%;
 }
 
-.header .img {
-  height: 100vh;
-}
+
 
 .header .img img {
   width: 100%;
@@ -347,25 +347,32 @@ header .text input {
 
 /************************************************************************************* roll-btn ***************************************************/
 .roll-btn {
+  position: relative;
   margin-top: 4.45312%;
+  height: 250px;
+
+}
+
+.roll-btn .container {
+  justify-content: center;
+  padding: 0;
 }
 
 
 .roll-btn .row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 200px;
+  width: 1000px;
+  height: 100%;
 }
 
 .roll-btn .circle {
-  width: 200px;
-  height: 100%;
+  width: 230px;
+  height: 230px;
   background: #F4EDDD;
   border-radius: 50%;
   position: relative;
-  margin: 0 1%;
 }
 
 .roll-btn .circle a {
@@ -431,7 +438,6 @@ header .text input {
 
 
 /************************************************************************************* banner ***************************************************/
-
 .banner {
   width: 100%;
   height: 100%;
@@ -442,6 +448,7 @@ header .text input {
   left: 0;
   right: 0;
   margin-inline: auto;
+  padding-top: 3%;
 }
 
 section {
@@ -451,11 +458,11 @@ section {
 
 .banner-before {
   position: relative;
-  margin: 0;
   max-width: 1920px;
   left: 0;
   right: 0;
   margin-inline: auto;
+  margin-top: 5%;
 }
 
 .banner-before img {
@@ -494,9 +501,11 @@ section {
 .banner .title {
   color: white;
   text-align: center;
+  margin-top: 1%;
 }
 
 .banner .more-btn {
+  position: relative;
   background: #Ffbbbb;
   width: fit-content;
   padding: 0 20px;
@@ -507,6 +516,7 @@ section {
   margin: auto;
   padding: .6% 5%;
   transition: .3s;
+  z-index: 1;
 }
 
 .banner .more-btn:hover {
@@ -526,16 +536,23 @@ section {
 .banner .wrap {
   display: flex;
   width: 100%;
+
   justify-content: space-evenly;
 }
 
 /**********************************************************************                                     logo-name
    ***************************************************************************************/
+.logo-name {
+  max-width: 1920px;
+  margin-inline: auto;
+  height: 100%;
+
+}
+
 .logo-name .logo-group {
   display: flex;
-  margin: 11.71875% 0;
+  margin: 5% 0;
   overflow: hidden;
-  height: 10vh;
 }
 
 .logo-name .logo-wrapper {
@@ -549,8 +566,7 @@ section {
 }
 
 .logo-name .logo {
-  /* height: 150px; */
-  margin: 0 10px;
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -563,6 +579,9 @@ section {
   font-family: Lilita One;
   margin: 2%;
   white-space: pre;
+  .trainer .container .cloud {
+    position: absolute;
+}
 }
 
 @keyframes walk1 {
@@ -598,15 +617,15 @@ footer {
   left: 0;
   right: 0;
   margin-inline: auto;
+  margin-top: 5%;
 }
 
 footer .row {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
-
   padding-top: 8%;
   padding-bottom: 4%;
 }
@@ -622,15 +641,12 @@ footer .text p:nth-of-type(2),
 }
 
 footer .text {
-  margin: 0 5%;
+  padding-top: 3%;
+  width: 30%;
 }
 
 footer .img {
-  text-align: end;
-}
-
-footer .img img {
-  width: 60%;
+  width: 30%;
 }
 
 .open-time {
@@ -641,6 +657,8 @@ footer .img img {
 .follow {
   display: flex;
   flex-wrap: wrap;
+  width: 30%;
+  padding-top: 3%;
 }
 
 .follow p {
@@ -660,16 +678,22 @@ footer .img img {
 
 
 /*************************************************************************************media***************************************************/
-
-@media screen and (min-width:1400px) {
-  #navbar:checked~.wrap-group .navbar-img {
-      right: calc((100vw - 1440px) / 2);
-
+@media screen and (max-width:1023px) {
+  .roll-btn .row {
+    width: 90%;
   }
-  
+
+  .roll-btn .circle {
+    width: 160px;
+    height: 160px;
+  }
+
+  header .text .item{
+    width: 65%;
+  }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:768px) {
   .block .title {
     font-size: 32px;
     line-height: 38px;
@@ -699,13 +723,98 @@ footer .img img {
     width: 35%;
   }
 
+  .banner {
+    padding: 11% 0;
+  }
+
+  .roll-btn .row {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+
+  .roll-btn .circle{
+    width: 48%;
+    height: 100px;
+    border-radius: 50px;
+  }
+
+  .roll-btn .btn{
+    border-radius: 50px;
+  }
+
+  footer .img {
+    width: 60%;
+  }
 
 
+  footer .row {
+    padding-top: 10%;
+    padding-inline: 5%;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  footer .text,
+  footer .follow {
+    width: 100%;
+  }
+
+  footer .follow {
+    white-space: nowrap;
+
+  }
+
+  .follow .img,
+  .follow p {
+    text-align: center;
+  }
+
+  .follow .img {
+    padding: 0;
+    margin-top: 3%;
+  }
+
+  .follow .img a {
+
+    margin-inline: 3%;
+    text-decoration: none;
+  }
+
+  footer .img {
+    width: 30%;
+  }
+
+  footer .row .text {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% 0;
+    justify-content: center;
+  }
+
+  footer .text p:nth-child(1) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3%;
+  }
+
+  footer .text p:nth-child(2),
+  footer .text .open-time {
+    text-align: center;
+    margin-inline: 5%;
+  }
+
+  footer .text .open-time {
+    padding: 0;
+  }
 }
 
 
-@media screen and (max-width:767px) {
+
+@media screen and (max-width:414px) {
+
+  * {
+    line-height: 28px;
+  }
 
   h1 {
     font-size: 32px;
@@ -714,6 +823,15 @@ footer .img img {
   .title {
     font-size: 24px;
     line-height: 32px;
+  }
+
+  .s-title{
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .container {
+    padding: 0 10%;
   }
 
   header .navbar-img {
@@ -729,52 +847,21 @@ footer .img img {
     width: 20%;
   }
 
-  .header .img {
-    height: 40vh;
-  }
-
   header .block .text .btn {
     width: 45%;
   }
 
-  footer .row {
-    padding-top: 10%;
-    padding-inline: 5%;
-    flex-wrap: wrap;
+  .banner .title {
+    padding-inline: 45px;
   }
 
-  footer .img,
-  footer .text,
-  footer .follow {
-    width: 100%;
-    text-align: start;
-  }
 
-  footer .img img {
-    width: 30%;
-  }
 
-  footer .row .text {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5% 0;
-    justify-content: space-between;
-  }
 
-  footer .text p:nth-child(1) {
-    width: 100%;
-  }
-
-  footer .text p:nth-child(2),
-  footer .text .open-time {
-    width: 45%;
-    text-align: start;
-  }
 
   footer .text .open-time {
-    padding: 0;
+    margin-top: 3%;
   }
-
 
 
 }

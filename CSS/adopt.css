@@ -1,24 +1,23 @@
-
 /**********************************************************************                                     new-adopt
    ***************************************************************************************/
 .new-adopt .title {
-    margin-top: 11.71875%;
+    margin-top: 5%;
     text-align: center;
 }
 
 .new-adopt .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 25%;
+    justify-content: space-between;
+    margin-bottom: 5%;
 }
 
 .new-adopt .card {
-    margin-top: 5%;
+    margin-top: 3%;
     background: white;
     border-radius: 50px;
     display: flex;
-    width: 30%;
+    width: 32%;
     padding: 1% 2%;
     align-items: center;
 }
@@ -55,15 +54,16 @@
 .more a {
     text-decoration: none;
     color: white;
+    white-space: nowrap;
 }
 
 .more:hover {
     background: #ffd750;
-  }
-  
-  .more:hover a {
+}
+
+.more:hover a {
     color: #333;
-  }
+}
 
 
 /**********************************************************************                                     banner
@@ -71,7 +71,7 @@
 
 .banner .wrap div {
     width: 14%;
-    margin: 5% 0;
+    margin: 3% 0;
 }
 
 .banner .wrap div:hover img {
@@ -91,11 +91,12 @@
 
 .before-adopt .title {
     text-align: center;
+    margin-bottom: 3%;
 }
 
 .before-adopt .card {
     display: flex;
-    padding: 5%;
+    margin-bottom: 5%;
     align-items: center;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -113,17 +114,21 @@
 
 .before-adopt .cloud {
     position: absolute;
-    left: 50%;
+    /* left: 50%; */
     transform: rotateY(180deg);
 }
 
 .before-adopt .card:nth-of-type(1) .cloud,
 .before-adopt .card:nth-of-type(3) .cloud {
-    translate: -160% -80%;
+    /* translate: -160% -80%; */
+    top: -15%;
+    left: -3%;
 }
 
 .before-adopt .card:nth-of-type(2) .cloud {
-    translate: 60% -70%;
+    /* translate: 60% -70%; */
+    top: -10%;
+    right: -3%;
 }
 
 
@@ -139,27 +144,31 @@
 
 .search .title {
     text-align: center;
-    margin-bottom: 5%;
+    margin: 5% 0% 3% 0%;
 }
 
-.search .menu-group{
+.search .menu-group {
     display: flex;
-    width: 25%;
-    justify-content: space-between;
+    width: 50%;
     align-items: center;
     margin-bottom: 3%;
+    flex-wrap: nowrap;
 }
 
-.search .menu{
-    width: 70%;
+.search .menu {
+    width: fit-content;
+    white-space: nowrap;
+    margin-right: 5%;
 }
 
-.search .gender{
-margin-right: 3%;
+.search .gender,
+.search .type {
+    margin-right: 5%;
+    padding: 10%;
 }
 
 .search select,
-.search .search-btn{
+.search .search-btn {
     background: #93B5C6;
     color: white;
     padding: 3%;
@@ -168,30 +177,33 @@ margin-right: 3%;
 
 }
 
-.search .search-btn{
+.search .search-btn {
     text-align: center;
     cursor: pointer;
     transition: .3s;
+    white-space: nowrap;
+    margin-left: 20%;
 }
 
-.search .search-btn a{
+.search .search-btn a {
     text-decoration: none;
     color: white;
 }
 
 .search .search-btn:hover {
     background: #ffd750;
-  }
-  
-  .search .search-btn:hover a {
-    color: #333;
-  }
-
-.search .container{
-    justify-content: space-between;
 }
 
-.search .card{
+.search .search-btn:hover a {
+    color: #333;
+}
+
+.search .container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.search .card {
     width: 48%;
     display: flex;
     padding: 2%;
@@ -203,16 +215,154 @@ margin-right: 3%;
 }
 
 .search .card .img,
-.search .card .wrap-group{
+.search .card .wrap-group {
     width: 48%;
 }
 
-.search .card .wrap{
+.search .card .wrap {
     display: flex;
     margin-top: 5%;
 }
 
-.search .more{
+.search .more {
     width: 50%;
     margin-top: 5%;
 }
+
+
+/**********************************************************************                                     @media
+   ***************************************************************************************/
+@media screen and (max-width:1000px) {
+    .new-adopt .card {
+        width: 48%;
+    }
+
+    .banner .wrap {
+        flex-wrap: wrap;
+        margin: 3% 0;
+    }
+
+    .banner .wrap div {
+        width: 28%;
+        margin: 3% 0;
+    }
+
+    .search .card {
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 3% 0%;
+    }
+
+    .search .card .img,
+    .search .card .wrap-group {
+        width: 80%;
+        height: 50%;
+    }
+
+    .search .card .wrap-group{
+        padding: 5%;
+    }
+
+    .search .card .img img{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .search .card {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 3%;
+        width: 100%;
+        margin-bottom: 8%;
+    }
+
+    .search .card .img,
+    .search .card .wrap-group {
+        width: 48%;
+        height: 80%;
+    }
+
+    .search .card .wrap-group{
+        padding: 0% 0% 0% 5%;
+    }
+
+    .search .card .img img{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .new-adopt .card {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+
+    .before-adopt .container .card:nth-child(1){
+        margin-top: 0;
+    }
+
+    .before-adopt .container .card{
+        flex-direction: column-reverse;
+        margin-top: 10%;
+    }
+
+    .before-adopt .img, 
+    .before-adopt .text{
+        width: 100%;
+    }
+
+    .before-adopt .img{
+        margin-top: 3%;
+    }
+
+    .before-adopt .card:nth-of-type(1) .cloud, .before-adopt .card:nth-of-type(3) .cloud{
+        top: -5%;
+    }
+
+    .before-adopt .card:nth-of-type(2) .cloud{
+        top: 0%;
+    }
+
+    .banner .wrap div {
+        width: 45%;
+    }
+
+    .brand .logo {
+        width: 48%;
+    }
+
+    
+
+    .search .menu-group{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search .gender, .search .type{
+        padding: 5%;
+    }
+
+    .search .container{
+        padding-inline: 3%;
+    }
+
+    .search .card .img{
+        width: 40%;
+        height: auto;
+    }
+    .search .card .wrap-group {
+        width: 58%;
+        height: auto;
+    }
+
+    .fa-lg {
+        font-size: 1em;
+        line-height: .05em;
+        vertical-align: -.075em;
+    }
+
+}
+
+
+

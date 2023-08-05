@@ -1,6 +1,4 @@
 /**********************************************************************                                      problem***************************************************************************************/
-
-
 .problem {
     margin-top: 8.90625%;
 }
@@ -77,15 +75,8 @@
     }
 }
 
-
 .problem .container .text {
     width: 50%;
-    padding-right: 130px;
-}
-
-.problem .container:nth-of-type(even) .text {
-    padding-left: 130px;
-    padding-right: 0;
 }
 
 .problem .title {
@@ -101,7 +92,6 @@
     margin-bottom: 10px;
 }
 
-
 .problem .cloud {
     position: absolute;
     left: 50%;
@@ -115,9 +105,6 @@
 .problem .container:nth-of-type(even) .cloud {
     transform: translate(-150%, -50%);
 }
-
-
-
 
 /**********************************************************************                                     banner
    ***************************************************************************************/
@@ -136,9 +123,9 @@
     transition: .3s .3s;
 }
 
-.banner .card:hover{
-scale: 1.2;
-transition: .3s;
+.banner .card:hover {
+    scale: 1.2;
+    transition: .3s;
 }
 
 .banner .card .name {
@@ -165,12 +152,8 @@ transition: .3s;
     left: -20%;
 }
 
-.banner .text {
-    font-size: 12px;
-}
-
 .banner .text p {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 24px;
 }
 
@@ -180,14 +163,11 @@ transition: .3s;
 
 
 
-
-
 /**********************************************************************                                     about
    ***************************************************************************************/
 
 .about .container {
     display: flex;
-    padding: 0 10%;
     justify-content: center;
     align-items: center;
 }
@@ -205,18 +185,9 @@ transition: .3s;
     width: 50%;
 }
 
-.about .img img {
-    width: 100%;
-    height: 100%;
-}
-
-
-
-
 /**********************************************************************                                     class
    ***************************************************************************************/
 .class {
-    margin-bottom: 11.71875%;
     position: relative;
 }
 
@@ -238,11 +209,11 @@ transition: .3s;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 11.71875%;
+    margin-bottom: 5%;
 }
 
 .class .card {
-    width: 20%;
+    width: 30%;
     background: white;
     border-radius: 50px;
     padding: 3%;
@@ -305,22 +276,26 @@ transition: .3s;
     justify-content: center;
     align-items: center;
     text-align: start;
-    background: rgba(0, 0, 0, 0.76);
-    height: 100vh;
+    background: #0008;
+    height: 100%;
+    width: 100%;
     inset: 0;
     margin: auto;
-    padding:3%;
-    transform: translatex(-100%);
+    padding: 3%;
+    visibility: hidden;
+    opacity: 0;
     transition: .3s;
+    z-index: 2;
+    transform: scale(0);
 }
 
-.class .about .title{
+.class .about .title {
     font-size: 28px;
     line-height: 32px;
     margin: 1%;
 }
 
-.class .s-title{
+.class .s-title {
     font-size: 18px;
     font-weight: bold;
     line-height: 18px;
@@ -328,10 +303,10 @@ transition: .3s;
 
 .class .s-title,
 .class .about .text {
-    color: white;
+    color: #333;
 }
 
-.class .about p{
+.class .about p {
     font-size: 12px;
     line-height: 18px;
 }
@@ -340,18 +315,11 @@ transition: .3s;
 .class .about p {
     width: 100%;
     text-align: center;
-    color: white;
+    color: #333;
 }
 
-.class .about .text{
-    padding-bottom: 8%;
-    line-height: 18px;
-}
-
-.class .about .cat,
-.class .about .dog {
-    padding:0 3%;
-    width: 45%;
+.class .about .text {
+    line-height: 24px;
 }
 
 .class .about .btn a {
@@ -377,21 +345,191 @@ transition: .3s;
     color: #333;
 }
 
-
-
 .class .about .group {
-    color: white;
+    color: #333;
     width: 100%;
     text-align: center;
     margin: 3% 0;
 }
 
-#onebyone-class,
+.class .about .img {
+    position: relative;
+    inset: 0;
+    margin: auto;
+    z-index: 0;
+    height: auto;
+    transform: scale(0);
+    max-width: 1000px;
+}
+
+.class .about .img img:nth-child(2) {
+    display: none;
+}
+
+.class .dog,
+.class .cat,
+.class .group-wrap {
+    position: absolute;
+    z-index: 2;
+    padding: 5%;
+    width: 60%;
+}
+
+.class .title,
+.class .text {
+    margin: 3% 0;
+}
+
+
+#cat-onebyone-class,
+#dog-onebyone-class,
 #group-class {
     display: none;
 }
 
-#onebyone-class:checked~.about,
-#group-class:checked~.about{
-    transform: translatex(0%);
+#cat-onebyone-class:checked~.about,
+#dog-onebyone-class:checked~.about,
+#group-class:checked~.about {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+    animation: jump .6s .3s linear forwards;
+}
+
+#cat-onebyone-class:checked~.about .img,
+#dog-onebyone-class:checked~.about .img,
+#group-class:checked~.about .img {
+    animation: jump .6s .3s linear forwards;
+
+}
+
+
+/*************************************************************************************media***************************************************/
+@media screen and (max-width:1000px) {
+    .banner .wrap {
+        flex-wrap: wrap;
+    }
+
+    .banner .card {
+        width: 30%;
+    }
+
+    .banner .card:nth-child(1),
+    .banner .card:nth-child(2),
+    .banner .card:nth-child(3) {
+        margin: 5% 0 0 0;
+    }
+
+    .class .about .img img:nth-child(1) {
+        display: none;
+    }
+
+
+    .class .about .img img:nth-child(2) {
+        display: block;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+
+
+    .problem .cloud {
+        transform: translate(60%, -100%);
+    }
+
+    .problem .container:nth-of-type(even) .cloud {
+        transform: translate(-160%, -80%);
+    }
+
+    .problem .container:nth-of-type(3) .cloud {
+        transform: translate(60%, -50%);
+    }
+
+    .problem .container:nth-of-type(3) .img {
+        padding: 0;
+    }
+
+    .class .wrap {
+        flex-wrap: wrap;
+    }
+
+    .class .card {
+        width: 60%;
+        margin-bottom: 3%;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width:414px) {
+    .problem .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .problem .container .img,
+    .problem .container .text {
+        width: 80%;
+        margin-block: 3%;
+    }
+
+    .problem .cloud {
+        transform: translate(50%, -140%);
+    }
+
+    .problem .container:nth-of-type(even) .cloud {
+        transform: translate(-150%, 0%);
+    }
+
+    .problem .container:nth-of-type(3) .cloud {
+        transform: translate(50%, 50%);
+    }
+
+    .banner .card {
+        width: 45%;
+        padding: 3%;
+    }
+
+    .about .container {
+        flex-direction: column;
+    }
+
+    .about .container .text,
+    .about .container .img {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 3%;
+    }
+
+    .class {
+        margin-top: 3%;
+    }
+
+    .class .container {
+        padding: 0;
+    }
+
+    .class .card {
+        width: 70%;
+    }
+
+    .class .about .img {
+        height: 80%;
+    }
+
+    .class .dog,
+    .class .cat,
+    .class .group-wrap {
+        width: 80%;
+    }
+
+    .class .about .img img:nth-child(2) {
+        display: block;
+        height: 100%;
+    }
 }

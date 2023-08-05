@@ -1,5 +1,4 @@
 .container {
-    padding: 5%;
     justify-content: space-between;
     align-items: center;
 }
@@ -7,7 +6,8 @@
 .about-class .text,
 .about-us .text,
 .banner .text,
-.image {
+.image,
+.banner .img {
     width: 48%;
 }
 
@@ -17,12 +17,11 @@
 
 
 .about-us .container {
-    margin-top: 4.45312%;
-
+    margin-top: 5%;
 }
 
-.about-us .title ,
-.about-class .title{
+.about-us .title,
+.about-class .title {
     margin-bottom: 3%;
 }
 
@@ -30,48 +29,58 @@
     banner
    ***************************************************************************************/
 
-.banner .container{
+.banner .container {
     justify-content: space-between;
 }
 
-.banner .text{
+.banner .text {
     color: white;
 }
 
+.banner .title{
+    margin-bottom: 3%;
+}
+
+.banner .more-btn{
+    margin-top: 3%;
+}
 
 /*********************************************************************                                          
     about-class
    ***************************************************************************************/
-
-.about-class .container{
-    padding: 0 5%;
-}
-
-.about-class .card{
+.about-class .card {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
 
-.about-class .card:nth-of-type(1){
-     margin-bottom: 10%;
+.about-class .card:nth-of-type(1) {
+    margin-bottom: 10%;
 }
 
-.about-class .card:nth-of-type(2){
+.about-class .card:nth-of-type(2) {
     flex-direction: row-reverse;
 }
 
-.about-class .cloud{
+.about-class .cloud {
     position: absolute;
 }
 
-.about-class .card:nth-of-type(1) .cloud{
-    transform: rotatey(180deg) translate(-70%, -200%);
+.about-class .text{
+    position: relative;
 }
 
-.about-class .card:nth-of-type(2) .cloud{
-    transform: rotatey(180deg) translate(10%, -280%);
+.about-class .card:nth-of-type(1) .cloud {
+    transform: rotatey(180deg) translate(-80%, 0%);
+    top: -10%;
+    left: 50%;
+}
+
+.about-class .card:nth-of-type(2) .cloud {
+    transform: rotatey(180deg) translate(180%, 0%);
+    top: -10%;
+    left: 50%;
 }
 
 
@@ -79,44 +88,123 @@
 /*********************************************************************                                          
     album
    ***************************************************************************************/
-.album .title{
+.album .title {
     text-align: center;
+    margin-bottom: 3%;
 }
 
-.album .container{
+.album .container {
     justify-content: center;
-    padding: 5% 3%;
 }
 
-.album .img{
+.album .img {
     width: 24%;
     margin: 1px;
     overflow: hidden;
 }
 
-.album img{
+.album img {
     scale: 1;
     transition: 1s;
 }
 
-.album .img:hover img{
+.album .img:hover img {
     scale: 1.2;
 }
 
 
-.album .img:nth-of-type(1){
-    border-radius: 50px 0 0 0 ;
+.album .img:nth-of-type(1) {
+    border-radius: 50px 0 0 0;
 }
 
-.album .img:nth-of-type(4){
-    border-radius:  0 50px 0 0 ;
+.album .img:nth-of-type(4) {
+    border-radius: 0 50px 0 0;
 }
 
-.album .img:nth-of-type(12){
-    border-radius:  0 0 50px 0 ;
+.album .img:nth-of-type(12) {
+    border-radius: 0 0 50px 0;
 }
 
-.album .img:nth-of-type(9){
-    border-radius:  0 0 0 50px;
+.album .img:nth-of-type(9) {
+    border-radius: 0 0 0 50px;
 }
 
+
+/********************************************************************media***************************************************************************************/
+@media screen and (max-width:1000px) {
+    .banner .title{
+        margin-bottom: 5%;
+    }
+    
+    .banner .more-btn{
+        margin-top: 5%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1279px) {
+
+    .about-class .card:nth-of-type(1) .cloud,
+    .about-class .card:nth-of-type(2) .cloud {
+        top: -5%;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    .container,
+    .about-class .container .card {
+        flex-direction: column;
+    }
+
+    .container .text,
+    .container .image,
+    .container .img {
+        width: 100%;
+    }
+
+    .about-class .container .card {
+        flex-direction: column-reverse;
+        margin-block: 15%;
+    }
+
+    .about-us .container .image {
+        margin-top: 3%;
+    }
+
+    .about-class .card:nth-of-type(1) .cloud {
+        transform: rotatey(180deg) translate(-100%, 30%);
+    }
+
+    .about-class .card:nth-of-type(2) .cloud {
+        transform: rotatey(180deg) translate(200%, 70%);
+    }
+
+    .album{
+        margin-top: 15%;
+    }
+
+    .album .container{
+        flex-direction: row;
+    }
+
+    .album .container .img{
+        width: 49%;
+    }
+
+    .album .img:nth-of-type(2) {
+        border-radius: 0 50px 0 0;
+    }
+
+    .album .img:nth-of-type(4) {
+        border-radius: 0 0px 0 0;
+    }
+
+    .album .img:nth-of-type(9) {
+        border-radius: 0 0px 0 0;
+    }
+
+    .album .img:nth-of-type(11) {
+        border-radius: 0 0 0 50px;
+    }
+}

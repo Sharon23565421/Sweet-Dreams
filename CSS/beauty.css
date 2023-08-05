@@ -1,17 +1,17 @@
 .about-beauty .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 0 10%;
-    margin-top: 4.45312%;
+    margin-top: 5%;
 }
 
 .about-beauty .text {
-    width: 50%;
+    padding-left: 10%;
 }
 
-.about-beauty .img {
-    width: 50%;
+.about-beauty .img,
+.about-beauty .text {
+    width: 48%;
     height: auto;
 }
 
@@ -23,6 +23,7 @@
 
 /**********************************************************************                                     banner
    ***************************************************************************************/
+
 
 .banner .wrap div {
     width: 14%;
@@ -40,6 +41,10 @@
     transition: .3s;
 }
 
+.banner .title{
+    margin-bottom: 0;
+}
+
 
 /**********************************************************************                                notice
    ***************************************************************************************/
@@ -47,7 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: top;
-    padding: 0 10%;
+    /* padding: 0 10%; */
     flex-wrap: wrap;
 
 }
@@ -62,7 +67,7 @@
 .notice .card {
     position: relative;
     width: 50%;
-    padding: 5%;
+    padding: 3%;
 }
 
 .notice .card p:nth-of-type(1) {
@@ -73,16 +78,14 @@
 
 .notice .cloud {
     position: absolute;
-    left: 50%;
-    transform: rotatey(180deg) scale(3) translate(50%, -100%);
+    bottom: 80%;
+    transform: rotatey(180deg) scale(2);
 }
 
 .notice .cat {
     position: absolute;
-    left: 50%;
-    width: 50%;
-    height: auto;
-    transform: translate(-120%, -220%);
+    bottom: 100%;
+    width: 45%;
 }
 
 .notice .cat img {
@@ -92,16 +95,18 @@
 
 .notice .pink-cloud {
     position: absolute;
-    left: 50%;
-    transform: rotatey(180deg) scale(3) translate(-10%, -90%);
+    left: 60%;
+    bottom: 80%;
+    transform: rotatey(180deg) scale(2);
 }
 
 .notice .kid-cat {
     position: absolute;
+    top: -15%;
     left: 50%;
-    width: 70%;
+    width: 50%;
     height: auto;
-    transform: translate(0%, -10%);
+    /* transform: translate(-30%, -30%); */
 }
 
 .notice .kid-cat img {
@@ -110,16 +115,16 @@
     animation: scale 15s -3s infinite alternate;
 }
 
-@keyframes scale{
-    0%{
+@keyframes scale {
+    0% {
         transform: scale(.7);
     }
 
-50%{
-    transform: scale(1);
-}
+    50% {
+        transform: scale(1);
+    }
 
-    100%{
+    100% {
         transform: scale(.7);
     }
 }
@@ -128,7 +133,6 @@
 
 /**********************************************************************                                price
    ***************************************************************************************/
-
 .price .container {
     position: relative;
     display: flex;
@@ -147,10 +151,9 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 0 10%;
 }
 
-.price table{
+.price table {
     width: 50%;
     text-align: left;
 }
@@ -160,8 +163,8 @@
     border-right: 1px solid #93B5C6;
 }
 
-.price table:nth-of-type(1)  thead{
-   text-align: left;
+.price table:nth-of-type(1) thead {
+    text-align: left;
 }
 
 .price table:nth-of-type(2) {
@@ -169,13 +172,86 @@
     padding-right: 5%;
 }
 
-.price .cloud{
-    transform: rotateY(180deg) translate(-60%,-120%);
-position: absolute;
-left: 50%;
+.price .cloud {
+    transform: rotateY(180deg) scale(.7);
+    position: absolute;
+    top: -5%;
+    right: 3%;
 }
 
-.price .dog{
+.price .dog {
     position: relative;
-    transform: translate(-120%,20%);
+    right: 35%;
+}
+
+
+/*************************************************************************************media***************************************************/
+@media screen and (max-width:1000px) {
+    .about-beauty .text {
+        padding-left: 0%;
+    }
+
+    .about-beauty .container{
+        justify-content: center;
+    }
+
+    .banner .wrap {
+        flex-wrap: wrap;
+        margin: 3% 0;
+    }
+
+    .banner .wrap div {
+        width: 28%;
+        margin: 3% 0;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .about-beauty .img,
+    .about-beauty .text {
+        width: 100%;
+    }
+    .notice .cloud {
+        bottom: 95%;
+    }
+
+    .notice .pink-cloud {
+        bottom: 95%;
+    }
+
+    .price .list {
+        flex-wrap: wrap;
+    }
+
+    .price table {
+        width: 100%;
+    }
+
+    .price table:nth-of-type(1) {
+        border-right: none;
+        padding-bottom: 10%;
+    }
+
+    .price table:nth-of-type(1) td,
+    .price table:nth-of-type(1) thead th{
+        text-align: center;
+    }
+
+    .price table:nth-of-type(2){
+        padding: 10% 5% 5% 5%;
+        border-top: 1px solid #93B5C6;
+    }
+
+    .price .cloud {
+        top: 5%;
+        right: 3%;
+    }
+
+    .price .dog {
+        right: 0%;
+    }
+
+    .banner .wrap div {
+        width: 45%;
+    }
 }
