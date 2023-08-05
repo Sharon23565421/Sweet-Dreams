@@ -206,6 +206,15 @@
     }
 }
 
+@media screen and (max-width:768px) {
+    .price table:nth-of-type(1){
+        padding: 5% 5% 5% 0;
+    }
+    .price table:nth-of-type(2){
+        padding-right: 0;
+    }
+}
+
 @media screen and (max-width:414px) {
     .about-beauty .img,
     .about-beauty .text {
@@ -219,8 +228,13 @@
         bottom: 95%;
     }
 
-    .price .list {
+    .banner .wrap div {
+        width: 45%;
+    }
+
+     .price .list {
         flex-wrap: wrap;
+        padding: 0 3%;
     }
 
     .price table {
@@ -249,9 +263,5 @@
 
     .price .dog {
         right: 0%;
-    }
-
-    .banner .wrap div {
-        width: 45%;
     }
 }
