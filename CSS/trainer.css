@@ -102,8 +102,6 @@
     width: 30%;
     padding: 2%;
     border-radius: 30px;
-    left: 0;
-    right: 0;
     margin-inline: auto;
     cursor: pointer;
     transition: .3s;
@@ -189,12 +187,14 @@
 
 }
 
-
-@media screen and (max-width:414px) {
-    .about-trainer .container {
+@media screen and (max-width:767px) {
+    .about-trainer .container{
         display: none;
     }
+}
 
+
+@media screen and (max-width:414px) {
     .trainer .container{
         flex-direction: column;
         margin-bottom: 15%;

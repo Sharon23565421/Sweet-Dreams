@@ -4,6 +4,36 @@
   z-index: 1;
 }
 
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  background-color: #fff;
+  z-index: 10;
+  display: flex;
+}
+
+#status {
+  position: relative;
+  width: 218px;
+  height: 419px;
+  inset: 0;
+  margin: auto;
+  z-index: 15;
+  align-items: center;
+}
+
+h1 {
+  color: #333;
+  display: block;
+  padding-top: 100%;
+}
+
+.show{
+  animation: jump .6s .3s linear forwards;
+}
 
 
 /**********************************************************************                                      header ***************************************************************************************/
@@ -14,6 +44,7 @@ header {
   position: relative;
   max-width: 1440px;
   margin-inline: auto;
+  overflow: hidden;
 }
 
 header .wrap-group {
@@ -100,6 +131,9 @@ header .logo {
   position: relative;
   width: 50%;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  left: -100%;
 }
 
 .img-givemefive:hover img {
@@ -110,7 +144,6 @@ header .logo {
 .img-givemefive img {
   position: absolute;
   width: 100%;
-  height: 100%;
   opacity: 0;
   animation: slider 25s linear infinite;
 }
@@ -152,7 +185,7 @@ header .logo {
 .cat {
   position: relative;
   width: 36%;
-  top: -60%;
+  top: -100%;
 }
 
 .cat img {
@@ -180,16 +213,15 @@ header .logo {
   padding: 11% 0;
 }
 
-
 .banner .container .img {
   position: relative;
   width: 50%;
-
 }
 
 .banner .item {
   width: 50%;
   position: relative;
+  opacity: .3;
 }
 
 
@@ -222,6 +254,39 @@ header .logo {
 .banner .title-cloud {
   right: 0;
   top: -30%;
+  opacity: 0;
+}
+
+
+@keyframes jump {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+
+  40% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  60% {
+    transform: scale(1);
+    opacity: 1;
+
+  }
+
+  80% {
+    transform: scale(1.2);
+    opacity: 1;
+
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+
+  }
 }
 
 .card-group {
@@ -321,6 +386,7 @@ header .logo {
 .service .title-cloud {
   top: -8%;
   left: 0;
+  opacity: 0;
 }
 
 .service .row {
@@ -377,11 +443,36 @@ header .logo {
   width: 100%;
 }
 
+.hand {
+  /* opacity: 1; */
+  animation: hand .6s forwards;
+}
+
+@keyframes hand {
+  0% {
+    opacity: 0;
+    transform: translate(30%, 200%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(0%, 60%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(30%, 80%);
+  }
+}
+
+
 .service .img img:nth-of-type(2) {
   position: absolute;
   left: 50%;
   width: 43%;
-  transform: translate(30%, 80%);
+  transform: translate(30%, 150%);
+  opacity: 0;
+
 }
 
 .service .card:nth-of-type(even) {
@@ -459,7 +550,7 @@ header .logo {
     align-items: center;
   }
 
-  .card-group .btn{
+  .card-group .btn {
     display: none;
   }
 
