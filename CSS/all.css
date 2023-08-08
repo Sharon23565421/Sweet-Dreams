@@ -281,7 +281,7 @@ header .text input {
   height: fit-content;
   z-index: 4;
   right: 0;
-  top: -100%;
+  top: -10%;
 }
 
 .navbar-btn {

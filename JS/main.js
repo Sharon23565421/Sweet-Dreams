@@ -17,29 +17,32 @@ $(function () {
             if ($(window).scrollTop() >= imgTop - $(window).height() && $(window).scrollTop() <= imgTop + $(window).height() / 2) {
                 $(this).stop().animate({
                     opacity: 1,
-                },300)
+                    left: "0",
+                }, 200, 'easeOutBack')
 
             } else {
                 $(this).stop().animate({
                     opacity: .3,
-                },300)
+                    left: "-10%",
+                }, 200, 'easeOutBack')
             }
 
         })
 
         $(".banner .container .item").each(function () {
             const itemTop = Math.round($(this).offset().top)
-            if ($(window).scrollTop() >= itemTop - $(window).height()  && $(window).scrollTop() <= itemTop + $(window).height() / 2)  {
+            if ($(window).scrollTop() >= itemTop - $(window).height() && $(window).scrollTop() <= itemTop + $(window).height() / 2) {
                 $(this).stop().animate({
                     opacity: 1,
-                },300)
+                    left: "0",
+                }, 200, 'easeOutBack')
 
             } else {
                 $(this).stop().animate({
                     opacity: .3,
-                },300)
+                    left: "-10%",
+                }, 200, 'easeOutBack')
             }
-
 
         })
 
@@ -49,46 +52,72 @@ $(function () {
             if ($(window).scrollTop() >= wrapTop - $(window).height() && $(window).scrollTop() <= wrapTop + $(window).height() / 2) {
                 $(this).stop().animate({
                     opacity: 1,
-                },300)
+                    top: 0,
+                }, 200, 'easeOutBack')
 
             } else {
                 $(this).stop().animate({
                     opacity: .3,
-                },300)
+                    top: '10%',
+                }, 200, 'easeOutBack')
             }
 
         })
 
 
-        $(".service .card").each(function () {
+        $(".service .card:even").each(function () {
             const cardTop = Math.round($(this).offset().top)
             if ($(window).scrollTop() >= cardTop - $(window).height() && $(window).scrollTop() <= cardTop + $(window).height() / 2) {
                 $(this).stop().animate({
                     opacity: 1,
-                },300)
-
+                    right: 0,
+                }, 200, 'easeOutBack' )
             } else {
                 $(this).stop().animate({
                     opacity: .3,
-                },300)
+                    right: '-15%'
+                }, 200, 'easeOutBack' )
             }
-
         })
 
+        $(".service .card:odd").each(function () {
+            const cardTop = Math.round($(this).offset().top)
+            if ($(window).scrollTop() >= cardTop - $(window).height() && $(window).scrollTop() <= cardTop + $(window).height() / 2) {
+                $(this).stop().animate({
+                    opacity: 1,
+                    left: 0,
+                }, 200, 'easeOutBack' )
+            } else {
+                $(this).stop().animate({
+                    opacity: .3,
+                    left: '-20%'
+                }, 200, 'easeOutBack')
+            }
+        })
+})
 
-    })
 
 
-    $(".img-givemefive").delay(3000).animate({
-        left: "0px",
-    }, 500, 'easeOutBack')
 
-    $(".cat").delay(3300).animate({
-        top: "-60%",
-    }, 500, 'easeOutBack')
 
-    $(".navbar-img").delay(3500).animate({
-        top: "0px",
-    }, 500, 'easeOutBack')
 
+
+
+
+
+        $(".img-givemefive").delay(3000).animate({
+            left: "0px",
+            opacity:1,
+        }, 500, 'easeOutBack')
+
+        $(".cat").delay(3300).animate({
+            top: "-60%",
+            opacity:1,
+        }, 500, 'easeOutBack')
+
+        $(".navbar-img").delay(3500).animate({
+            top: "0%",
+            opacity:1,
+        }, 500, 'easeOutBack')
+    
 })

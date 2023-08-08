@@ -10,11 +10,23 @@ $(function () {
         }, 500,"easeOutQuart")
     })
 
+    $("header .goback-btn").mouseenter(function(){
+        $(this).addClass("animate__animated animate__jello")
+    }).mouseleave(function(){
+        $(this).removeClass("animate__animated animate__jello")
+    })
+
     $(".navbar-img").mouseenter(function(){
         $(this).addClass("animate__animated animate__jello")
     }).mouseleave(function(){
         $(this).removeClass("animate__animated animate__jello")
     })
+
+
+    $(".navbar-img").delay(1000).animate({
+        top: "0px",
+        opacity:1,
+    }, 500, 'easeOutBack')
 
 
 })

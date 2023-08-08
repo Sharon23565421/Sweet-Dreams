@@ -130,10 +130,11 @@ header .logo {
 .img-givemefive {
   position: relative;
   width: 50%;
-  z-index: 1;
+  z-index: 5;
   display: flex;
   align-items: center;
-  left: -100%;
+  left: -10%;
+  opacity:.3;
 }
 
 .img-givemefive:hover img {
@@ -186,10 +187,11 @@ header .logo {
   position: relative;
   width: 36%;
   top: -100%;
+  opacity:.3;
 }
 
 .cat img {
-  width: 100%;
+  width: -50%;
   height: 100%;
 }
 
@@ -377,6 +379,7 @@ header .logo {
 .service {
   width: 100%;
   position: relative;
+
 }
 
 .service .container {
@@ -394,6 +397,7 @@ header .logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  overflow: hidden;
 }
 
 .service .card {
@@ -402,6 +406,7 @@ header .logo {
   justify-content: center;
   align-items: center;
   margin-bottom: 10%;
+  position: relative;
 }
 
 .service .text {
