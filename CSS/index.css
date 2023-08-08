@@ -130,7 +130,7 @@ header .logo {
 .img-givemefive {
   position: relative;
   width: 50%;
-  z-index: 5;
+  z-index: 1;
   display: flex;
   align-items: center;
   left: -10%;
@@ -505,7 +505,7 @@ header .logo {
 @media screen and (max-width:768px) {
   header .img-givemefive img {
     height: fit-content;
-    top: 55%;
+    top: 50%;
   }
 
   .logo span {
@@ -542,6 +542,7 @@ header .logo {
 
   .banner .title {
     text-align: start;
+    padding: 0;
   }
 
   .card-group .title {
