@@ -507,7 +507,7 @@ header .logo {
   header .img-givemefive img {
     height: fit-content;
 left: 50%;
-transform: translate(-50%,100%);
+transform: translate(-50%,80%);
   }
 
   .logo span {
