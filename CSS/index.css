@@ -505,7 +505,7 @@ header .logo {
 @media screen and (max-width:768px) {
   header .img-givemefive img {
     height: fit-content;
-    top: 50%;
+    top: 0%;
   }
 
   .logo span {
