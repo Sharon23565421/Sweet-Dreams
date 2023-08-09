@@ -1,8 +1,13 @@
+.about-beauty {
+    overflow: hidden;
+}
+
 .about-beauty .container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 5%;
+    position: relative;
 }
 
 .about-beauty .text {
@@ -41,20 +46,23 @@
     transition: .3s;
 }
 
-.banner .title{
+.banner .title {
     margin-bottom: 0;
 }
 
 
 /**********************************************************************                                notice
    ***************************************************************************************/
+.notice {
+    position: relative;
+}
+
 .notice .container {
     display: flex;
     justify-content: center;
-    align-items: top;
-    /* padding: 0 10%; */
     flex-wrap: wrap;
-
+    padding-inline: 10%;
+    position: relative;
 }
 
 .notice .title {
@@ -78,14 +86,16 @@
 
 .notice .cloud {
     position: absolute;
-    bottom: 80%;
-    transform: rotatey(180deg) scale(2);
+   top: 25%;
+    left: 5%;
+    transform: rotatey(180deg);
 }
 
 .notice .cat {
     position: absolute;
-    bottom: 100%;
-    width: 45%;
+    top: -10%;
+    left: 5%;
+    width: 20%;
 }
 
 .notice .cat img {
@@ -94,19 +104,21 @@
 }
 
 .notice .pink-cloud {
-    position: absolute;
-    left: 60%;
-    bottom: 80%;
-    transform: rotatey(180deg) scale(2);
+    right: 5%;
+    top: auto;
+    left: auto;
+}
+
+.notice .img {
+    width: 50%;
 }
 
 .notice .kid-cat {
-    position: absolute;
+    position: relative;
     top: -15%;
     left: 50%;
     width: 50%;
     height: auto;
-    /* transform: translate(-30%, -30%); */
 }
 
 .notice .kid-cat img {
@@ -151,6 +163,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    position: relative;
 }
 
 .price table {
@@ -191,7 +204,7 @@
         padding-left: 0%;
     }
 
-    .about-beauty .container{
+    .about-beauty .container {
         justify-content: center;
     }
 
@@ -204,22 +217,29 @@
         width: 28%;
         margin: 3% 0;
     }
+
+    .notice .cat {
+        top: -5%;
+    }
 }
 
 @media screen and (max-width:768px) {
-    .price table:nth-of-type(1){
+    .price table:nth-of-type(1) {
         padding: 5% 5% 5% 0;
     }
-    .price table:nth-of-type(2){
+
+    .price table:nth-of-type(2) {
         padding-right: 0;
     }
 }
 
 @media screen and (max-width:414px) {
+
     .about-beauty .img,
     .about-beauty .text {
         width: 100%;
     }
+
     .notice .cloud {
         bottom: 95%;
     }
@@ -232,7 +252,11 @@
         width: 45%;
     }
 
-     .price .list {
+    .notice .cat {
+        top: -1%;
+    }
+
+    .price .list {
         flex-wrap: wrap;
         padding: 0 3%;
     }
@@ -247,11 +271,11 @@
     }
 
     .price table:nth-of-type(1) td,
-    .price table:nth-of-type(1) thead th{
+    .price table:nth-of-type(1) thead th {
         text-align: center;
     }
 
-    .price table:nth-of-type(2){
+    .price table:nth-of-type(2) {
         padding: 10% 5% 5% 5%;
         border-top: 1px solid #93B5C6;
     }

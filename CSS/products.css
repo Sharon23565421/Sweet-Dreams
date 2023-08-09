@@ -4,16 +4,16 @@ header .icon {
     z-index: 2;
 }
 
-.menu .icon{
+.menu .icon {
     position: absolute;
     top: 6%;
-    left:3%;
+    left: 3%;
     /* width: 10%; */
     display: flex;
     justify-content: space-between;
 }
 
-.menu .icon i{
+.menu .icon i {
     margin-right: 50%;
 }
 
@@ -43,6 +43,7 @@ header .icon {
     justify-content: center;
     align-items: center;
     margin-bottom: 3%;
+    position: relative;
 }
 
 i {
@@ -89,19 +90,44 @@ i:hover {
 /**********************************************************************                                     banner
    ***************************************************************************************/
 
-.banner .wrap div {
+.banner .wrap .pic,
+.banner .wrap .text {
     width: 14%;
     margin: 5% 0;
+    height: 100%;
 }
 
-.banner .wrap div:hover img {
+.banner .pic {
+    position: relative;
+
+}
+
+.banner .wrap .text {
+    background: #0008;
+    margin: 0;
+    width: 100%;
+    border-radius: 18px;
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: .3s;
+    top: 0;
+}
+
+.banner .wrap .pic:hover .text {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.banner .wrap .pic:hover img {
     transform: scale(1.2);
 }
 
 .banner .wrap img {
-    width: 100%;
-    height: 100%;
-    transform: scale(1);
     transition: .3s;
 }
 
@@ -144,7 +170,7 @@ i:hover {
     justify-content: center;
     background: #93B5C6;
     padding: 5% 0;
-    margin:5% 0;
+    margin: 5% 0;
 }
 
 .keyword .title {
@@ -201,6 +227,8 @@ i:hover {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    padding-inline: 45px;
+    justify-content: space-around;
 }
 
 .trainer .wrap:nth-of-type(3) {
@@ -209,9 +237,9 @@ i:hover {
 }
 
 .trainer .img {
-    width: 50%;
+    width: 40%;
     height: auto;
-    padding: 0 5%;
+
 }
 
 .trainer .img img {
@@ -313,8 +341,8 @@ i:hover {
 /**********************************************************************                                     @media
    ***************************************************************************************/
 
-   @media screen and (max-width:1000px) {
-    .favorable .card{
+@media screen and (max-width:1000px) {
+    .favorable .card {
         width: 48%;
     }
 
@@ -327,10 +355,10 @@ i:hover {
         width: 28%;
         margin: 3% 0;
     }
-   }
+}
 
-   @media screen and (max-width:414px) {
-    .favorable .card{
+@media screen and (max-width:414px) {
+    .favorable .card {
         width: 100%;
     }
 
@@ -341,29 +369,24 @@ i:hover {
     .brand .logo {
         width: 48%;
     }
-    
-    .keyword .keyword-btn .btn{
+
+    .keyword .keyword-btn .btn {
         width: 30%;
         margin-bottom: 3%;
     }
 
-    .trainer .wrap-group .wrap{
+    .trainer .wrap-group .wrap {
         flex-direction: column-reverse;
+        padding-inline: 5%;
     }
 
-    .trainer .card{
+    .trainer .card {
         width: 100%;
         margin-block: 3%;
     }
 
-    .trainer .img {
-        width: 60%;
-    }
-   
     .menu .icon {
         display: none;
     }
 
-   }
-
-
+}

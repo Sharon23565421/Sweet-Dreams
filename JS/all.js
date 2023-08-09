@@ -22,12 +22,29 @@ $(function () {
         $(this).removeClass("animate__animated animate__jello")
     })
 
+    $(".roll-btn .btn").click(function () {
+        const target = $(this).attr("href");
+        const position = $(target).offset().top;
+        $("html,body").animate({
+            scrollTop : position,
+        }, 500,"easeOutQuart")
+    })
 
-    $(".navbar-img").delay(1000).animate({
+
+
+    $("header #waveHeader").delay(500).animate({
         top: "0px",
-        opacity:1,
-    }, 500, 'easeOutBack')
+    }, 500, 'easeOutBounce')
 
+    $(".header .wrap a img").delay(500).animate({
+        top: "10%",
+    }, 500, 'easeOutBounce')
+    
+    $(".navbar-img").delay(800).animate({
+        top: "0px",
+    }, 500, 'easeOutBounce')
+
+    $(".header .img img").addClass("animate__animated animate__zoomIn")
 
 })
 

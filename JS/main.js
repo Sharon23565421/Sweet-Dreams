@@ -15,16 +15,9 @@ $(function () {
         $(".banner .img:first").each(function () {
             const imgTop = Math.round($(this).offset().top)
             if ($(window).scrollTop() >= imgTop - $(window).height() && $(window).scrollTop() <= imgTop + $(window).height() / 2) {
-                $(this).stop().animate({
-                    opacity: 1,
-                    left: "0",
-                }, 200, 'easeOutBack')
-
+                $(this).addClass("animate__animated animate__fadeInRight")
             } else {
-                $(this).stop().animate({
-                    opacity: .3,
-                    left: "-10%",
-                }, 200, 'easeOutBack')
+                $(this).removeClass("animate__animated animate__fadeInRight")
             }
 
         })
@@ -32,16 +25,9 @@ $(function () {
         $(".banner .container .item").each(function () {
             const itemTop = Math.round($(this).offset().top)
             if ($(window).scrollTop() >= itemTop - $(window).height() && $(window).scrollTop() <= itemTop + $(window).height() / 2) {
-                $(this).stop().animate({
-                    opacity: 1,
-                    left: "0",
-                }, 200, 'easeOutBack')
-
+                $(this).addClass("animate__animated animate__fadeInRight")
             } else {
-                $(this).stop().animate({
-                    opacity: .3,
-                    left: "-10%",
-                }, 200, 'easeOutBack')
+                $(this).removeClass("animate__animated animate__fadeInRight")
             }
 
         })
@@ -53,13 +39,13 @@ $(function () {
                 $(this).stop().animate({
                     opacity: 1,
                     top: 0,
-                }, 200, 'easeOutBack')
+                }, 300, 'easeOutBack')
 
             } else {
                 $(this).stop().animate({
                     opacity: .3,
-                    top: '10%',
-                }, 200, 'easeOutBack')
+                    top: '15%',
+                }, 300, 'easeOutBack')
             }
 
         })
@@ -68,33 +54,23 @@ $(function () {
         $(".service .card:even").each(function () {
             const cardTop = Math.round($(this).offset().top)
             if ($(window).scrollTop() >= cardTop - $(window).height() && $(window).scrollTop() <= cardTop + $(window).height() / 2) {
-                $(this).stop().animate({
-                    opacity: 1,
-                    right: 0,
-                }, 200, 'easeOutBack' )
+                $(this).addClass("animate__animated animate__fadeInLeft")
             } else {
-                $(this).stop().animate({
-                    opacity: .3,
-                    right: '-15%'
-                }, 200, 'easeOutBack' )
+                $(this).removeClass("animate__animated animate__fadeInLeft")
             }
         })
 
         $(".service .card:odd").each(function () {
             const cardTop = Math.round($(this).offset().top)
             if ($(window).scrollTop() >= cardTop - $(window).height() && $(window).scrollTop() <= cardTop + $(window).height() / 2) {
-                $(this).stop().animate({
-                    opacity: 1,
-                    left: 0,
-                }, 200, 'easeOutBack' )
+                $(this).addClass("animate__animated animate__fadeInRight")
+
             } else {
-                $(this).stop().animate({
-                    opacity: .3,
-                    left: '-20%'
-                }, 200, 'easeOutBack')
+                $(this).removeClass("animate__animated animate__fadeInRight")
+
             }
         })
-})
+    })
 
 
 
@@ -105,19 +81,15 @@ $(function () {
 
 
 
-        $(".img-givemefive").delay(3000).animate({
-            left: "0px",
-            opacity:1,
-        }, 500, 'easeOutBack')
+    $(".img-givemefive").delay(3000).animate({
+        left: "0px",
+        opacity: 1,
+    }, 500, 'easeOutBack')
 
-        $(".cat").delay(3300).animate({
-            top: "-60%",
-            opacity:1,
-        }, 500, 'easeOutBack')
+    $(".cat").delay(3300).animate({
+        top: "-60%",
+        opacity: 1,
+    }, 500, 'easeOutBack')
 
-        $(".navbar-img").delay(3500).animate({
-            top: "0%",
-            opacity:1,
-        }, 500, 'easeOutBack')
-    
+
 })

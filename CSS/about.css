@@ -14,10 +14,13 @@
 /*********************************************************************                                          
     about-us
    ***************************************************************************************/
-
+.about-us {
+    overflow: hidden;
+}
 
 .about-us .container {
     margin-top: 5%;
+    position: relative;
 }
 
 .about-us .title,
@@ -37,17 +40,22 @@
     color: white;
 }
 
-.banner .title{
+.banner .title {
     margin-bottom: 3%;
 }
 
-.banner .more-btn{
+.banner .more-btn {
     margin-top: 3%;
 }
 
 /*********************************************************************                                          
     about-class
    ***************************************************************************************/
+.about-class {
+    overflow: hidden;
+    position: relative;
+}
+
 .about-class .card {
     display: flex;
     justify-content: space-between;
@@ -56,7 +64,7 @@
 }
 
 .about-class .card:nth-of-type(1) {
-    margin-bottom: 10%;
+    margin: 5% 0;
 }
 
 .about-class .card:nth-of-type(2) {
@@ -67,20 +75,20 @@
     position: absolute;
 }
 
-.about-class .text{
+.about-class .text {
     position: relative;
 }
 
-.about-class .card:nth-of-type(1) .cloud {
-    transform: rotatey(180deg) translate(-80%, 0%);
-    top: -10%;
-    left: 50%;
+.about-class .cloud:nth-of-type(3) {
+    transform: rotatey(180deg) ;
+     top: 45%;
+    left: 3%;
 }
 
-.about-class .card:nth-of-type(2) .cloud {
-    transform: rotatey(180deg) translate(180%, 0%);
-    top: -10%;
-    left: 50%;
+.about-class .cloud:nth-of-type(4)  {
+    transform: rotatey(180deg) ;
+     top: 0%;
+   right: 3%;
 }
 
 
@@ -132,11 +140,11 @@
 
 /********************************************************************media***************************************************************************************/
 @media screen and (max-width:1000px) {
-    .banner .title{
+    .banner .title {
         margin-bottom: 5%;
     }
-    
-    .banner .more-btn{
+
+    .banner .more-btn {
         margin-top: 5%;
     }
 }
@@ -159,7 +167,7 @@
 
     .container .text,
     .container .image,
-    .container .img {
+    .banner .container .img {
         width: 100%;
     }
 
@@ -180,15 +188,15 @@
         transform: rotatey(180deg) translate(200%, 70%);
     }
 
-    .album{
+    .album {
         margin-top: 15%;
     }
 
-    .album .container{
+    .album .container {
         flex-direction: row;
     }
 
-    .album .container .img{
+    .album .container .img {
         width: 49%;
     }
 
