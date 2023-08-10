@@ -241,11 +241,11 @@
     }
 
     .notice .cloud {
-        bottom: 95%;
+top: 22%;
     }
 
     .notice .pink-cloud {
-        bottom: 95%;
+        top: 2%;
     }
 
     .banner .wrap div {
