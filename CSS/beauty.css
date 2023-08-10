@@ -61,7 +61,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-inline: 10%;
+    padding-inline: 5%;
     position: relative;
 }
 
@@ -86,7 +86,7 @@
 
 .notice .cloud {
     position: absolute;
-   top: 25%;
+    top: 25%;
     left: 5%;
     transform: rotatey(180deg);
 }
@@ -241,7 +241,7 @@
     }
 
     .notice .cloud {
-top: 22%;
+        top: 22%;
     }
 
     .notice .pink-cloud {
