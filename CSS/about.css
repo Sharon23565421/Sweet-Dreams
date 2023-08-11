@@ -21,6 +21,8 @@
 .about-us .container {
     margin-top: 5%;
     position: relative;
+    opacity: 0;
+    transform: translate3d(-100%,0,0);
 }
 
 .about-us .title,
@@ -34,6 +36,7 @@
 
 .banner .container {
     justify-content: space-between;
+    opacity: 0;
 }
 
 .banner .text {
@@ -65,10 +68,12 @@
 
 .about-class .card:nth-of-type(1) {
     margin: 5% 0;
+    left: 100%;
 }
 
 .about-class .card:nth-of-type(2) {
     flex-direction: row-reverse;
+    right: 100%;
 }
 
 .about-class .cloud {

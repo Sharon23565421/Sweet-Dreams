@@ -83,6 +83,16 @@
     position: relative;
 }
 
+.problem .container .text:nth-child(even){
+    transform: translate3d(100%,0,0);
+    opacity: 0;
+}
+
+.problem .container .text:nth-child(odd){
+    transform: translate3d(-100%,0,0);
+    opacity: 0;
+}
+
 .problem .title {
     margin-bottom: 20px;
 }
@@ -178,6 +188,9 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    transform: translate3d(-100%,0,0);
+    opacity: 0;
+
 }
 
 .about .container .text {
@@ -227,6 +240,7 @@
     text-align: center;
     margin: 0 2%;
     position: relative;
+    opacity: 0;
 }
 
 .class .text {
@@ -328,6 +342,7 @@
 
 .class .about .text {
     line-height: 24px;
+    padding: 0 10%;
 }
 
 .class .about .btn a {
@@ -435,6 +450,10 @@
 
     .class .about .img img:nth-child(2) {
         display: block;
+    }
+
+    .class .about .text {
+        padding: 0 ;
     }
 
 }

@@ -130,8 +130,8 @@ header .logo {
   display: flex;
   align-items: center;
   left: -10%;
-  opacity:.3;
-  
+  opacity: .3;
+
 }
 
 .img-givemefive:hover img {
@@ -184,7 +184,7 @@ header .logo {
   position: relative;
   width: 36%;
   top: -100%;
-  opacity:.3;
+  opacity: .3;
 }
 
 .cat img {
@@ -212,6 +212,13 @@ header .logo {
   padding: 11% 0;
 }
 
+.banner .wrap-group {
+  display: flex;
+  flex-wrap: wrap;
+  left: 100%;
+  position: relative;
+}
+
 .banner .container .img {
   position: relative;
   width: 50%;
@@ -220,7 +227,6 @@ header .logo {
 .banner .item {
   width: 50%;
   position: relative;
-  opacity: .3;
 }
 
 
@@ -303,6 +309,7 @@ header .logo {
   justify-content: space-around;
   z-index: 1;
   position: relative;
+  opacity: 0;
 }
 
 .card-group .card {
@@ -468,13 +475,68 @@ header .logo {
 }
 
 
-.service .img img:nth-of-type(2) {
+.service .card:nth-of-type(odd) .img img:nth-of-type(2) {
   position: absolute;
-  left: 50%;
+  right: -5%;
+  top: 50%;
   width: 43%;
-  transform: translate(30%, 150%);
   opacity: 0;
+}
 
+@keyframes move-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 100%, 0);
+    transform: translate3d(100%, 100%, 0);
+  }
+
+  25% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 100%, 0);
+    transform: translate3d(100%, 100%, 0);
+  }
+}
+
+@keyframes move-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 100%, 0);
+    transform: translate3d(-100%, 100%, 0);
+  }
+
+  25% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 100%, 0);
+    transform: translate3d(-100%, 100%, 0);
+  }
+}
+
+.move-right {
+ animation: move-right 1s;
+}
+
+.move-left {
+  animation: move-left 1s;
+ }
+
+.service .card:nth-of-type(even) .img img:nth-of-type(2) {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  width: 43%;
+  opacity: 0;
 }
 
 .service .card:nth-of-type(even) {

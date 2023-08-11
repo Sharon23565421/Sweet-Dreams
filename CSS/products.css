@@ -19,19 +19,24 @@ header .icon {
 
 /*******************************************************************************favorable***************************************************/
 
-
 .favorable .container {
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 5%;
-    justify-content: space-evenly;
-
+    overflow: hidden;
 }
 
 .favorable .title {
     width: 100%;
     text-align: center;
     margin-bottom: 5%;
+}
+
+.favorable .card-group{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    opacity: 0;
 }
 
 .favorable .card {
@@ -44,6 +49,7 @@ header .icon {
     align-items: center;
     margin-bottom: 3%;
     position: relative;
+    /* opacity: .3; */
 }
 
 i {
@@ -216,7 +222,9 @@ i:hover {
 
 /**********************************************************************                                     trainer
    ***************************************************************************************/
-
+.trainer .wrap-group{
+    overflow: hidden;
+}
 
 .trainer .title {
     text-align: center;
@@ -229,6 +237,7 @@ i:hover {
     flex-wrap: wrap;
     padding-inline: 45px;
     justify-content: space-around;
+    position: relative;
 }
 
 .trainer .wrap:nth-of-type(3) {
@@ -351,10 +360,11 @@ i:hover {
         margin: 3% 0;
     }
 
-    .banner .wrap div {
+    .banner .wrap .pic {
         width: 28%;
         margin: 3% 0;
     }
+
 }
 
 @media screen and (max-width:414px) {
@@ -362,7 +372,7 @@ i:hover {
         width: 100%;
     }
 
-    .banner .wrap div {
+    .banner .wrap .pic {
         width: 45%;
     }
 

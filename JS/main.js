@@ -1,74 +1,62 @@
 $(function () {
     $("#status").delay(2000).fadeOut(1000);
     $("#preloader").delay(3000).fadeOut(1000);
+
     $(window).scroll(function () {
+        let showHeight = 200
+
         $(".title-cloud").each(function () {
             const titleTop = Math.round($(this).offset().top)
-            if ($(window).scrollTop() >= titleTop - $(window).height() && $(window).scrollTop() <= titleTop + $(window).height() / 2) {
+            if ($(window).scrollTop() >= (titleTop + showHeight) - $(window).height()) {
                 $(this).stop().addClass("show")
 
             } else {
                 $(this).stop().removeClass("show")
             }
+            false
         })
 
-        $(".banner .img:first").each(function () {
-            const imgTop = Math.round($(this).offset().top)
-            if ($(window).scrollTop() >= imgTop - $(window).height() && $(window).scrollTop() <= imgTop + $(window).height() / 2) {
-                $(this).addClass("animate__animated animate__fadeInRight")
-            } else {
-                $(this).removeClass("animate__animated animate__fadeInRight")
-            }
-
-        })
-
-        $(".banner .container .item").each(function () {
+        $(".banner .wrap-group").each(function () {
             const itemTop = Math.round($(this).offset().top)
-            if ($(window).scrollTop() >= itemTop - $(window).height() && $(window).scrollTop() <= itemTop + $(window).height() / 2) {
-                $(this).addClass("animate__animated animate__fadeInRight")
+            if ($(window).scrollTop() >= (itemTop + showHeight) - $(window).height()) {
+                $(this).addClass("animate__animated animate__fadeInRight").css({ 'left': '0px' })
             } else {
-                $(this).removeClass("animate__animated animate__fadeInRight")
+                $(this).removeClass("animate__animated animate__fadeInRight").css({ 'left': '100%' })
             }
-
+            false
         })
 
 
         $(".banner .wrap").each(function () {
             const wrapTop = Math.round($(this).offset().top)
-            if ($(window).scrollTop() >= wrapTop - $(window).height() && $(window).scrollTop() <= wrapTop + $(window).height() / 2) {
-                $(this).stop().animate({
-                    opacity: 1,
-                    top: 0,
-                }, 300, 'easeOutBack')
-
+            if ($(window).scrollTop() >= (wrapTop + showHeight) - $(window).height()) {
+                $(this).addClass("animate__animated animate__fadeInUp").css({ 'opacity': '1' })
             } else {
-                $(this).stop().animate({
-                    opacity: .3,
-                    top: '15%',
-                }, 300, 'easeOutBack')
+                $(this).removeClass("animate__animated animate__fadeInUp").css({ 'opacity': '0' })
             }
-
+            false
         })
 
 
-        $(".service .card:even").each(function () {
+        $(".service .card:even img:nth-of-type(2)").each(function () {
             const cardTop = Math.round($(this).offset().top)
-            if ($(window).scrollTop() >= cardTop - $(window).height() && $(window).scrollTop() <= cardTop + $(window).height() / 2) {
-                $(this).addClass("animate__animated animate__fadeInLeft")
+            if ($(window).scrollTop() >= (cardTop + showHeight) - $(window).height()) {
+                $(this).addClass("move-right")
             } else {
-                $(this).removeClass("animate__animated animate__fadeInLeft")
+                $(this).removeClass("move-right")
             }
+            false
         })
 
-        $(".service .card:odd").each(function () {
+        $(".service .card:odd img:nth-of-type(2)").each(function () {
             const cardTop = Math.round($(this).offset().top)
-            if ($(window).scrollTop() >= cardTop - $(window).height() && $(window).scrollTop() <= cardTop + $(window).height() / 2) {
-                $(this).addClass("animate__animated animate__fadeInRight")
+            if ($(window).scrollTop() >= (cardTop + showHeight) - $(window).height()) {
+                $(this).addClass("move-left")
 
             } else {
-                $(this).removeClass("animate__animated animate__fadeInRight")
-
+                $(this).removeClass("move-left")
             }
+            false
         })
     })
 
