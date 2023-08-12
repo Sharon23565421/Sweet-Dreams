@@ -1,9 +1,9 @@
 $(function () {
     $(window).scroll(function () {
         let showHeight = 200
-        $(".favorable .card-group").each(function () {
+        $(".favorable .card").each(function () {
             const cardTop = Math.round($(this).offset().top)
-            if ($(window).scrollTop() >= (cardTop) - $(window).height()) {
+            if ($(window).scrollTop() >= (cardTop) - $(window).height())  {
                 $(this).addClass("animate__animated animate__fadeInUp animate__faster")
             } else {
                 $(this).removeClass("animate__animated animate__fadeInUp animate__faster")

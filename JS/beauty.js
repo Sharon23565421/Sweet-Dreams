@@ -13,17 +13,13 @@ $(function () {
       
         $(".notice .card").each(function () {
             const top = $(this).offset().top;
-            if ($(window).scrollTop() >= (top + showHeight) - $(window).height()) {
-                $(this).addClass("animate__animated animate__fadeInUp")
+            if ($(window).scrollTop() >= (top) - $(window).height()) {
+                $(this).addClass("animate__animated animate__fadeInUp animate__faster")
             } else {
-                $(this).removeClass("animate__animated animate__fadeInUp")
+                $(this).removeClass("animate__animated animate__fadeInUp animate__faster")
             }
             false
         })
-
-      
-
-
 
         $(".price .list").each(function () {
             const top = $(this).offset().top;

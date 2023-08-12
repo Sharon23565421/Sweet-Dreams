@@ -36,7 +36,7 @@ header .icon {
     flex-wrap: wrap;
     justify-content: space-evenly;
     position: relative;
-    opacity: 0;
+    
 }
 
 .favorable .card {
@@ -49,7 +49,7 @@ header .icon {
     align-items: center;
     margin-bottom: 3%;
     position: relative;
-    /* opacity: .3; */
+    opacity: 0;
 }
 
 i {

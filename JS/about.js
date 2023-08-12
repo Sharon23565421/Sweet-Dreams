@@ -12,16 +12,6 @@ $(function () {
             false
         })
 
-        $(".banner .container").each(function () {
-            const cardTop = Math.round($(this).offset().top)
-            if ($(window).scrollTop() >= (cardTop + showHeight) - $(window).height()) {
-                $(this).addClass("animate__animated animate__zoomIn").css({'opacity': '1'})
-            } else {
-                $(this).removeClass("animate__animated animate__zoomIn").css({'opacity': '0'})
-            }
-            false
-        })
-
         $(".about-class .card:even").each(function () {
             const cardTop = Math.round($(this).offset().top)
             if ($(window).scrollTop() >= (cardTop + showHeight) - $(window).height()) {

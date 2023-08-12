@@ -318,8 +318,16 @@ before-adopt .card:nth-child(5) {
         margin-bottom: 3%;
     }
 
-    .before-adopt .container .card:nth-child(1) {
-        margin-top: 0;
+    .before-adopt .cloud:nth-of-type(2){
+       top: 0;
+    }
+
+    .before-adopt .cloud:nth-of-type(4){
+        top: 36%;
+    }
+
+    .before-adopt .cloud:nth-of-type(6){
+        top: 66%;
     }
 
     .before-adopt .container .card {
@@ -336,15 +344,6 @@ before-adopt .card:nth-child(5) {
         margin-top: 3%;
     }
 
-    .before-adopt .card:nth-of-type(1) .cloud,
-    .before-adopt .card:nth-of-type(3) .cloud {
-        top: -5%;
-    }
-
-    .before-adopt .card:nth-of-type(2) .cloud {
-        top: 0%;
-    }
-
     .banner .wrap div {
         width: 45%;
     }
@@ -352,8 +351,6 @@ before-adopt .card:nth-child(5) {
     .brand .logo {
         width: 48%;
     }
-
-
 
     .search .menu-group {
         width: 100%;

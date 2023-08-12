@@ -9,6 +9,7 @@
     margin-top: 5%;
     position: relative;
     right: 100%;
+    opacity: 0;
 }
 
 .about-beauty .text {

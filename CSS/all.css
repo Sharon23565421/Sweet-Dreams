@@ -69,7 +69,7 @@ body {
   max-width: 1440px;
 }
 
-.show{
+.show {
   animation: jump .6s .3s linear forwards;
 }
 
@@ -581,9 +581,10 @@ section {
   font-family: Lilita One;
   margin: 2%;
   white-space: pre;
+
   .trainer .container .cloud {
     position: absolute;
-}
+  }
 }
 
 @keyframes walk1 {
@@ -689,7 +690,7 @@ footer .img {
     height: 160px;
   }
 
-  header .text .item{
+  header .text .item {
     width: 65%;
   }
 }
@@ -733,13 +734,13 @@ footer .img {
     flex-wrap: wrap;
   }
 
-  .roll-btn .circle{
+  .roll-btn .circle {
     width: 48%;
     height: 100px;
     border-radius: 50px;
   }
 
-  .roll-btn .btn{
+  .roll-btn .btn {
     border-radius: 50px;
   }
 
@@ -757,7 +758,7 @@ footer .img {
 
   footer .follow {
     white-space: nowrap;
-padding: 0;
+    padding: 0;
   }
 
   .follow .img,
@@ -822,13 +823,17 @@ padding: 0;
     line-height: 32px;
   }
 
-  .s-title{
+  .s-title {
     font-size: 20px;
     line-height: 28px;
   }
 
   .container {
     padding: 0 10%;
+  }
+
+  .header .wrap a img {
+    top: 10%;
   }
 
   header .navbar-img {

@@ -217,6 +217,7 @@ header .logo {
   flex-wrap: wrap;
   left: 100%;
   position: relative;
+  opacity: 0;
 }
 
 .banner .container .img {
@@ -591,12 +592,12 @@ header .logo {
     top: -15%;
   }
 
-  .banner .container {
+  .banner .wrap-group{
     flex-direction: column-reverse;
   }
 
-  .banner>.container>.img,
-  .banner .item {
+  .banner .wrap-group .img,
+  .banner .wrap-group .item {
     width: 100%;
   }
 

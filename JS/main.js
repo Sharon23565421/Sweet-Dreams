@@ -26,13 +26,12 @@ $(function () {
             false
         })
 
-
         $(".banner .wrap").each(function () {
             const wrapTop = Math.round($(this).offset().top)
-            if ($(window).scrollTop() >= (wrapTop + showHeight) - $(window).height()) {
-                $(this).addClass("animate__animated animate__fadeInUp").css({ 'opacity': '1' })
+            if ($(window).scrollTop() >= (wrapTop) - $(window).height()) {
+                $(this).addClass("animate__animated animate__fadeInUp animate__faster").css({ 'opacity': '1' })
             } else {
-                $(this).removeClass("animate__animated animate__fadeInUp").css({ 'opacity': '0' })
+                $(this).removeClass("animate__animated animate__fadeInUp animate__faster").css({ 'opacity': '0' })
             }
             false
         })
