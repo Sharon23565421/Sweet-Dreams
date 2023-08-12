@@ -63,6 +63,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    opacity: 0;
 }
 
 .about-class .card:nth-of-type(1) {
