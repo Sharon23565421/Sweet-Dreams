@@ -1,7 +1,3 @@
-.about-beauty {
-    /* overflow: hidden; */
-}
-
 .about-beauty .container {
     display: flex;
     justify-content: space-evenly;
