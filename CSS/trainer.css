@@ -65,17 +65,20 @@
 
 /*************************************************************************************trainer***************************************************/
 .trainer {
-    margin-top: 10%;
+    padding-top: 10%;
+    overflow: hidden;
 }
 
 .trainer .container {
-    padding: 0 5%;
-    justify-content: space-evenly;
-    align-items: self-start;
     margin-bottom: 8%;
     position: relative;
 }
 
+.trainer .introduce{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: self-start;
+}
 
 .trainer .text,
 .trainer .card {
@@ -94,7 +97,6 @@
     margin: auto;
     margin-bottom: 5%;
 }
-
 
 .trainer .btn {
     margin-top: 5%;
@@ -120,9 +122,12 @@
     text-decoration: none;
 }
 
+.trainer .introduce{
+    opacity: 0;
+}
 
-.hover .container,
-.melly .container {
+.hover .introduce,
+.melly .introduce {
     flex-direction: row-reverse;
 }
 
