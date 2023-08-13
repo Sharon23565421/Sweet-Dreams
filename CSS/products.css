@@ -125,7 +125,7 @@ i:hover {
 }
 
 .banner .wrap .pic:hover .text {
-    transform: scale(1.2);
+    transform: scale(1);
     opacity: 1;
 }
 
@@ -434,9 +434,14 @@ i:hover {
         width: 100%;
     }
 
+    .banner .wrap .pic:hover img {
+        transform: scale(1);
+    }
+
     .banner .about-products {
         flex-direction: column-reverse;
         justify-content: center;
+        flex-wrap: nowrap;
     }
 
     .banner .wrap .pic {

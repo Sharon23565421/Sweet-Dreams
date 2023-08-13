@@ -36,11 +36,11 @@ $(function () {
     })
         
         $(".pic img, .pic .text").click(function () {
-            $(this).siblings(".about-products").css({ "opacity": "1", "visibility": "visible" }).removeClass("animate__animated animate__zoomOut").addClass("animate__animated animate__zoomIn");
+            $(this).siblings(".about-products").css({ "opacity": "1", "visibility": "visible" })
         });
     
         $(".about-products").click(function () {
-            $(this).css({ "opacity": "0", "visibility": "hidden" }).removeClass("animate__animated animate__zoomIn").addClass("animate__animated animate__zoomOut");
+            $(this).css({ "opacity": "0", "visibility": "hidden" })
         });
 
 
