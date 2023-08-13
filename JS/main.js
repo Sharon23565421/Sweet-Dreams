@@ -59,11 +59,35 @@ $(function () {
         })
     })
 
+    const width = $("body").outerWidth();
+    if(width <= 768){
+        $(".card-group .wrap").addClass("owl-carousel owl-theme")
+    }else{
+        $(".card-group .wrap").removeClass("owl-carousel owl-theme")
+    }
 
-
-
-
-
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items:3,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        center: true,
+        stopOnHover:true,
+        autoplayTimeout:8000,
+        autoplayHoverPause:true,
+        responsive: {
+            0: {
+              items: 1
+            },
+            768: {
+              items: 1
+            },
+            1000: {
+              items: 3 
+            }
+        }
+    });
 
 
 
