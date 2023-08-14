@@ -249,6 +249,10 @@
         top: 2%;
     }
 
+    .notice .cloud{
+        display: none;
+    }
+
     .banner .wrap div {
         width: 45%;
     }
@@ -282,8 +286,7 @@
     }
 
     .price .cloud {
-        top: 5%;
-        right: 3%;
+        display: none;
     }
 
     .price .dog {
