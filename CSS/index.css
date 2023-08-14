@@ -695,8 +695,14 @@ header .logo {
     transform: translate(180%, 0%);
   }
 
+
+  .owl-carousel .owl-stage-outer{
+    height: 480px;
+  }
+
   .card-group .wrap .card {
-    width: 80%;
+    width: 90%;
+    height: 450px;
   }
 
 

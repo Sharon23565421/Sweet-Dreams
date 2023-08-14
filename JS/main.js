@@ -68,7 +68,7 @@ $(function () {
 
     var owl = $('.owl-carousel');
     owl.owlCarousel({
-        items:3,
+        items:1,
         loop:true,
         margin:10,
         autoplay:true,
@@ -76,20 +76,7 @@ $(function () {
         stopOnHover:true,
         autoplayTimeout:8000,
         autoplayHoverPause:true,
-        responsive: {
-            0: {
-              items: 1
-            },
-            768: {
-              items: 1
-            },
-            1000: {
-              items: 3 
-            }
-        }
     });
-
-
 
 
     $(".img-givemefive").delay(3000).animate({
