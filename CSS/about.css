@@ -21,8 +21,6 @@
 .about-us .container {
     margin-top: 5%;
     position: relative;
-    opacity: 0;
-    transform: translate3d(-100%,0,0);
 }
 
 .about-us .title,
@@ -163,7 +161,7 @@
 
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
 
     .container,
     .about-class .container .card {
@@ -174,6 +172,10 @@
     .container .image,
     .banner .container .img {
         width: 100%;
+    }
+
+    .container .image{
+        margin-top: 5%;
     }
 
     .about-class .container .card {
@@ -202,22 +204,8 @@
     }
 
     .album .container .img {
-        width: 49%;
+        width: 100%;
+        border-radius: 20px;
     }
 
-    .album .img:nth-of-type(2) {
-        border-radius: 0 50px 0 0;
-    }
-
-    .album .img:nth-of-type(4) {
-        border-radius: 0 0px 0 0;
-    }
-
-    .album .img:nth-of-type(9) {
-        border-radius: 0 0px 0 0;
-    }
-
-    .album .img:nth-of-type(11) {
-        border-radius: 0 0 0 50px;
-    }
 }

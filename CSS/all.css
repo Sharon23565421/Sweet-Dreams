@@ -696,6 +696,10 @@ footer .img {
 }
 
 @media screen and (max-width:768px) {
+  header .goback-btn {
+    width: 20%;
+  }
+
   .block .title {
     font-size: 32px;
     line-height: 38px;
@@ -833,7 +837,6 @@ footer .img {
   }
 
   .header .wrap a img {
-
     transform: scale(1.2);
   }
 
@@ -844,10 +847,6 @@ footer .img {
   header .navbar span {
     width: 15px;
     height: 4px;
-  }
-
-  header .goback-btn {
-    width: 20%;
   }
 
   header .block .text .btn {

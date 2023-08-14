@@ -215,9 +215,7 @@ header .logo {
 .banner .wrap-group {
   display: flex;
   flex-wrap: wrap;
-  left: 100%;
   position: relative;
-  opacity: 0;
 }
 
 .banner .container .img {
@@ -309,9 +307,7 @@ header .logo {
 .card-group .wrap {
   display: flex;
   justify-content: space-around;
-  z-index: 1;
   position: relative;
-  opacity: 0;
   flex-wrap: wrap;
 }
 
@@ -580,8 +576,7 @@ header .logo {
 @media screen and (max-width:768px) {
   header .img-givemefive img {
     height: fit-content;
-    /* top: 0%; */
-    margin-top: 150%;
+    margin-top: 120%;
   }
 
   .logo span {
@@ -609,6 +604,10 @@ header .logo {
 
   .banner .wrap-group{
     flex-direction: column-reverse;
+  }
+
+  .banner .wrap-group .img{
+    margin-top: 5%;
   }
 
   .banner .wrap-group .img,
@@ -659,18 +658,32 @@ header .logo {
   .service .card .text,
   .service .card .img {
     width: 100%;
-    margin: 3% 0;
+    margin: 5% 0;
+  }
+
+  .service .card .img{
+    width: 80%;
   }
 
   .card-group .wrap .card {
     width: 60%;
     margin-inline: auto;
+    height: 450px;
   }
+  .owl-carousel .owl-stage-outer{
+    height: 480px;
+  }
+
+
 
 }
 
 
 @media screen and (max-width:414px) {
+  header .img-givemefive img {
+    margin-top: 150%;
+  }
+
   header .logo {
     right: 50%;
   }
@@ -692,15 +705,13 @@ header .logo {
     transform: translate(180%, 0%);
   }
 
-
-  .owl-carousel .owl-stage-outer{
-    height: 480px;
-  }
-
   .card-group .wrap .card {
     width: 90%;
     height: 450px;
   }
 
+  .service .card .img{
+    width: 100%;
+  }
 
 }

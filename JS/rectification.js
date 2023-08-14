@@ -20,27 +20,10 @@ $(function () {
             }
         })
 
-        $(".about .container").each(function () {
-            const top = $(this).offset().top;
-            if ($(window).scrollTop() >= (top + showHeight) - $(window).height()) {
-                $(this).addClass("animate__animated animate__fadeInLeft")
-            } else {
-                $(this).removeClass("animate__animated animate__fadeInLeft")
-            }
-        })
-
         $(".class .card .more-btn").on("click", function () {
             const card = $(this).closest(".card");
             card.removeClass("animate__animated animate__zoomIn"); 
         });
 
-        $(".class .card").each(function () {
-            const top = $(this).offset().top;
-            if ($(window).scrollTop() >= (top + showHeight) - $(window).height()) {
-                $(this).addClass("animate__animated animate__zoomIn").css({'opacity': '1'})
-            } else {
-                $(this).removeClass("animate__animated animate__zoomIn").css({'opacity': '0'})
-            }
-        })
     })
 })

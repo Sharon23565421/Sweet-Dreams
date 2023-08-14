@@ -49,7 +49,6 @@ header .icon {
     align-items: center;
     margin-bottom: 3%;
     position: relative;
-    opacity: 0;
 }
 
 i {
@@ -129,7 +128,7 @@ i:hover {
     opacity: 1;
 }
 
-.banner .wrap .pic:hover img {
+.banner .wrap .pic:hover>img {
     transform: scale(1.2);
 }
 
@@ -178,7 +177,6 @@ i:hover {
 }
 
 .banner .pic .about-products .item img {
-    transform: scale(1);
     margin-bottom: 5%;
 }
 

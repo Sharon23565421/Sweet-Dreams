@@ -21,7 +21,6 @@
     width: 32%;
     padding: 1% 2%;
     align-items: center;
-    opacity: 0;
 }
 
 .new-adopt .wrap-group {
@@ -71,12 +70,12 @@
 /**********************************************************************                                     banner
    ***************************************************************************************/
 
-.banner .wrap div {
+.banner .wrap .find-pets {
     width: 14%;
     margin: 3% 0;
 }
 
-.banner .wrap div:hover img {
+.banner .wrap .find-pets:hover>img {
     transform: scale(1.2);
 }
 
@@ -86,6 +85,101 @@
     transform: scale(1);
     transition: .3s;
 }
+
+.banner .wrap .text {
+    background: #0008;
+    margin: 0;
+    width: 100%;
+    border-radius: 12%;
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: .3s;
+    top: 0;
+    height: 100%;
+}
+
+.banner .wrap .find-pets:hover .text {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.banner .find-pets {
+    position: relative;
+}
+
+.banner .about-products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: fixed;
+    background: #93B5C6;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 3;
+    inset: 0;
+    margin: auto;
+    padding: 5%;
+    justify-content: space-between;
+    align-items: center;
+    overflow:scroll;
+}
+
+.banner .about-products .item,
+.banner .about-products .about {
+    width: 46%;
+}
+
+.banner .about-products .about .s-title {
+    color: white;
+    margin-top: 5%;
+}
+
+
+.about table td,
+.about table th,
+.about p {
+    color: white;
+}
+
+.about p {
+    padding: 0 5%;
+}
+
+.about table {
+    text-align: start;
+    width: 80%;
+}
+
+.about table td {
+    width: fit-content;
+    padding: 0 5%;
+}
+
+
+
+.banner .about-products .x-btn {
+    position: absolute;
+    top: 8%;
+    right: 5%;
+}
+
+.banner .about-products .item {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner .about-products .item img {
+    transform: scale(1);
+    margin-bottom: 5%;
+}
+
 
 
 /**********************************************************************                                     before-adopt
@@ -110,23 +204,15 @@
     justify-content: space-between;
     flex-direction: row-reverse;
     position: relative;
-    opacity: 0;
-}
-
-.before-adopt .card:nth-child(1),
-before-adopt .card:nth-child(5) {
-    right: 100%;
-
-}
-
-.before-adopt .card:nth-of-type(3) {
-    flex-direction: row;
-    left: 100%;
 }
 
 .before-adopt .img,
 .before-adopt .text {
     width: 48%;
+}
+
+.before-adopt .card:nth-child(3) {
+    flex-direction: row;
 }
 
 .before-adopt .cloud {
@@ -231,7 +317,6 @@ before-adopt .card:nth-child(5) {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3%;
-    opacity: 0;
 }
 
 .search .card .img,
@@ -262,7 +347,7 @@ before-adopt .card:nth-child(5) {
         margin: 3% 0;
     }
 
-    .banner .wrap div {
+    .banner .wrap .find-pets {
         width: 28%;
         margin: 3% 0;
     }
@@ -289,6 +374,10 @@ before-adopt .card:nth-child(5) {
 }
 
 @media screen and (max-width:768px) {
+    .about table {
+        width: 100%;
+    }
+
     .search .card {
         flex-direction: row;
         justify-content: space-around;
@@ -313,20 +402,51 @@ before-adopt .card:nth-child(5) {
 }
 
 @media screen and (max-width:414px) {
+    .banner .about-products {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .banner .about-products .item img {
+        margin-bottom: 0;
+    }
+
+    .banner .about-products .item {
+        width: 80%;
+    }
+
+    .banner .about-products .x-btn {
+        top: 3%;
+        right: 3%;
+    }
+
+    .banner .about-products .about {
+        width: 100%;
+    }
+
+    .banner .wrap .find-pets:hover>img {
+        transform: scale(1);
+    }
+
+    .banner .wrap .find-pets:hover .text {
+        transform: scale(1);
+    }
+
     .new-adopt .card {
         width: 100%;
         margin-bottom: 3%;
     }
 
-    .before-adopt .cloud:nth-of-type(2){
-       top: 0;
+    .before-adopt .cloud:nth-of-type(2) {
+        top: 0;
     }
 
-    .before-adopt .cloud:nth-of-type(4){
+    .before-adopt .cloud:nth-of-type(4) {
         top: 36%;
     }
 
-    .before-adopt .cloud:nth-of-type(6){
+    .before-adopt .cloud:nth-of-type(6) {
         top: 66%;
     }
 
@@ -344,7 +464,7 @@ before-adopt .card:nth-child(5) {
         margin-top: 3%;
     }
 
-    .banner .wrap div {
+    .banner .wrap .find-pets {
         width: 45%;
     }
 
