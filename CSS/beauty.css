@@ -241,14 +241,6 @@
         width: 100%;
     }
 
-    .notice .cloud {
-        top: 22%;
-    }
-
-    .notice .pink-cloud {
-        top: 2%;
-    }
-
     .notice .cloud{
         display: none;
     }
@@ -263,7 +255,6 @@
 
     .price .list {
         flex-wrap: wrap;
-        /* padding: 0 3%; */
     }
 
     .price table {
@@ -291,6 +282,5 @@
 
     .price .dog {
         right: 0%;
-        /* margin-top: 5%; */
     }
 }
