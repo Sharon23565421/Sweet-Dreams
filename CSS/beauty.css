@@ -53,6 +53,7 @@
    ***************************************************************************************/
 .notice {
     position: relative;
+    overflow: hidden;
 }
 
 .notice .container {
@@ -74,7 +75,7 @@
     position: relative;
     width: 50%;
     padding: 3%;
-    transform: translate3d(0,100%,0);
+    transform: translate3d(0, 100%, 0);
     opacity: 0;
 }
 
@@ -241,7 +242,7 @@
         width: 100%;
     }
 
-    .notice .cloud{
+    .notice .cloud {
         display: none;
     }
 
@@ -263,7 +264,7 @@
 
     .price table:nth-of-type(1) {
         border-right: none;
-        padding:0 5% 10% 5%;
+        padding: 0 5% 10% 5%;
     }
 
     .price table:nth-of-type(1) td,
