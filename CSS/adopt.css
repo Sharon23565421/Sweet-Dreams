@@ -127,7 +127,7 @@
     padding: 5%;
     justify-content: space-between;
     align-items: center;
-    overflow:scroll;
+
 }
 
 .banner .about-products .item,
@@ -167,6 +167,7 @@
     position: absolute;
     top: 8%;
     right: 5%;
+    cursor: pointer;
 }
 
 .banner .about-products .item {
@@ -176,7 +177,6 @@
 }
 
 .banner .about-products .item img {
-    transform: scale(1);
     margin-bottom: 5%;
 }
 
@@ -406,6 +406,7 @@
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
+        overflow:scroll;
     }
 
     .banner .about-products .item img {

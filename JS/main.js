@@ -38,26 +38,6 @@ $(function () {
         })
     })
 
-    const width = $("body").outerWidth();
-    if(width <= 768){
-        $(".card-group .wrap").addClass("owl-carousel owl-theme")
-    }else{
-        $(".card-group .wrap").removeClass("owl-carousel owl-theme")
-    }
-
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        items:1,
-        loop:true,
-        margin:10,
-        autoplay:true,
-        center: true,
-        stopOnHover:true,
-        autoplayTimeout:8000,
-        autoplayHoverPause:true,
-    });
-
-
     $(".img-givemefive").delay(3000).animate({
         left: "0px",
         opacity: 1,
@@ -68,5 +48,32 @@ $(function () {
         opacity: 1,
     }, 500, 'easeOutBack')
 
-
+    start();
+    window.onresize = start;
+    function start() {
+        if (jQuery(window).width() <= 768) {
+            $(".card-group .wrap").addClass("owl-carousel owl-theme")
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                // stagePadding: 50,
+                items: 2,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                stopOnHover: true,
+                autoplayTimeout: 8000,
+                responsiveRefreshRate: 0,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    768: {
+                        items: 2,
+                    }
+                }
+            });
+        } else if (jQuery(window).width() > 768) {
+            $(".album .container").removeClass("owl-carousel owl-theme")
+        }
+    }
 })
