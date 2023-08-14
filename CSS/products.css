@@ -125,7 +125,7 @@ i:hover {
 }
 
 .banner .wrap .pic:hover .text {
-    transform: scale(1);
+    transform: scale(1.2);
     opacity: 1;
 }
 
@@ -459,8 +459,9 @@ i:hover {
         margin-left: 100%;
         right: 3%;
     }
-
-
+c
+    .banner .wrap .pic:hover .text {
+        transform: scale(1);}
 
     .brand .logo {
         width: 48%;
