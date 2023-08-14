@@ -670,8 +670,6 @@ header .logo {
 }
 
 
-
-
 @media screen and (max-width:414px) {
   header .logo {
     right: 50%;
@@ -683,7 +681,6 @@ header .logo {
   }
 
   .logo span:nth-of-type(3) {
-    /* transform: translate(-25%,0); */
     white-space: pre-wrap;
   }
 

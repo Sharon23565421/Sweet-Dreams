@@ -37,7 +37,7 @@ $(function () {
     }, 500, 'easeOutBounce')
 
     $(".header .wrap a img").delay(500).animate({
-        top: "20px",
+        top: "25px",
     }, 500, 'easeOutBounce')
     
     $(".navbar-img").delay(800).animate({
