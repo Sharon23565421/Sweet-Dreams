@@ -55,7 +55,6 @@ $(function () {
             $(".card-group .wrap").addClass("owl-carousel owl-theme")
             var owl = $('.owl-carousel');
             owl.owlCarousel({
-                // stagePadding: 50,
                 items: 2,
                 loop: true,
                 margin: 10,
